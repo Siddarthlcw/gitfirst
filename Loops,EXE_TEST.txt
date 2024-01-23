@@ -1,0 +1,1844 @@
+while loop
+------------------------------------------------------------
+1.
+public class amstrong {
+
+	public static void main(String[] args) 
+	{
+		int n=153,rev=0,count=0,p=0,b=0;
+		int	i=n,a=i;
+		while(n!=0)
+		{
+			rev=rev*10+n%10;
+			n=n/10;
+			count++;
+		}
+		System.out.println(rev+":reverse");
+		while(i!=0)
+		{
+			b=i%10;
+			p=p+(int)Math.pow(b,count);
+			i=i/10;
+		}
+		System.out.println("power is:"+p);
+		if(p==a)
+		{
+		   System.out.println("it is armstrong");
+		}
+		else 
+		{
+		   System.out.println("it is not armstrong");
+		}
+	}
+
+}
+output:-
+351:reverse
+power is:153
+it is armstrong
+-------------------------------------------------------------------
+2.
+public class AddMulExt {
+
+	public static void main(String[] args) 
+	{
+		int n=12345,rem=0,count=0,mul1=1,mul2=1,mul3=1;
+		while(n!=0)
+		{
+			rem=n%10;
+			n=n/10;
+			count++;
+			if(count==1||count==5)
+				mul1=mul1*rem;
+			else if(count==2||count==4)
+				mul2=mul2*rem;
+			else
+				mul3=rem;
+		}
+		
+		System.out.println((mul1+mul2)*mul3);
+	}
+
+}
+Output:-
+39
+---------------------------------------------------------------------
+3.
+public class fact_high {
+
+	public static void main(String[] args) 
+	{
+		int n1=99,n2=33,x=1,var=0;
+		int result=n1<n2?n1:n2;
+		while(x<=result)
+		{
+			if(n1%x==0 && n2%x==0)
+			{
+				var=x;
+				System.out.println(var);
+			}
+			
+		 x++;
+		}
+		System.out.println("Highest common factor: "+var);
+
+	}
+
+}
+Output:-
+3
+11
+33
+Highest common factor: 33
+---------------------------------------------------------------------
+4.
+public class fact_low 
+{
+	public static void main(String[] args) 
+	{
+		int n1=99,n2=33,var=0;
+		int result=n1<n2?n1:n2;
+		while(result>=2)
+		{
+			if(n1%result==0 && n2%result==0)
+			{
+				var=result;
+				System.out.println(var);
+			}
+			
+			
+		 result--;
+		}
+		System.out.println("least common factor: "+var);
+
+	}
+
+
+}
+Output:-
+33
+11
+3
+least common factor: 3
+---------------------------------------------------------------------
+5.
+public class factorial 
+{
+	
+   public static void main(String args[])
+	{
+	    int i=10,fact=1;
+	    while(i>=fact)
+	    {
+	      if(i%fact==0)
+	      {
+	        System.out.println(fact+",it is a factor of 10"); 
+	      }
+	     fact++;
+	    }
+	}
+
+}
+Output:-
+1,it is a factor of 10
+2,it is a factor of 10
+5,it is a factor of 10
+10,it is a factor of 10
+---------------------------------------------------------------------
+6.
+public class fibonaci 
+{
+	public static void main(String[] args) 
+	{
+		int f=0,s=1,t=0,i=1;
+		System.out.print(f+"\t"+s);
+		while(i<=10)
+		{
+			t=f+s;
+			f=s;
+			s=t;
+			System.out.print("\t"+t);
+			
+		i++;	
+		}
+	 
+
+	}
+
+}
+Output:-
+0 1 1 2	3 5 8 13 21 34 55 89
+-------------------------------------------------------------------
+7.
+public class superfactorial 
+{
+	public static void main(String[] args)
+	{
+     int n=1,x=500,count=0;
+     while(n<=x)
+     {   
+    	if (x%n==0)
+    	   count++;
+    	n++ ;
+     }
+     if(count>10)
+		 System.out.println("it is a super number");
+	 else
+		 System.out.println("it is not a super number");
+     
+	}
+ 	  
+}
+Output:-
+it is a super number
+------------------------------------------------------------------
+8.
+public class origreverse 
+{
+
+	public static void main(String args[])
+	{
+		int i=1200,num=0,count=0,sum=0;
+		while(i!=0)
+		{
+			sum=i%10;
+			num=i/10;
+			count++;
+			
+		}
+		System.out.println(sum);
+		System.out.println(num);
+		System.out.println(count);
+	
+		
+
+	}
+
+}
+Output:-
+0021
+1200
+4
+------------------------------------------------------------------
+9.
+public class oriiginal 
+{
+
+	public static void main(String[] args) 
+	{
+		int i=1200,c1=0,c2=0,rev=0,rev2=0,c3=0;
+		while(i!=0)//1200!=0T//
+		{
+			rev=i%10+rev*10;//0+0=0//0+0=0
+			i=i/10;//1200/10=120//
+			c1++;//1
+		}
+		rev2=rev;
+		System.out.println(rev2);
+		System.out.println(c1);
+		while(i!=0)
+		{
+			rev=rev/10;
+			c2++;
+		}
+		c3=c1-c2;
+		rev2=rev*(int)Math.pow(10,c3)+17;
+		System.out.println(rev2);
+	}
+
+}
+Output:-
+21
+4
+210017
+-----------------------------------------------------------------
+10.
+public class prime {
+
+	public static void main(String[] args) 
+	{
+		int x=2,n=72,count=0;
+		while(x<=n/2)//
+		{
+			
+			if(n%x==0)
+			{
+				count++;
+			}
+			
+			x++;
+		}
+		if(count==0)
+			System.out.println(n+" is prime");
+		else
+			System.out.println(n+" is not prime");
+		System.out.println(count+" iterations");
+	}
+
+}
+
+Output:-
+72 is not prime
+10 iterations
+-----------------------------------------------------------------
+11.
+public class reverse_add
+{
+	public static void main(String[] args) 
+	{
+	int n=17546,sum=0,count=0,num=n;
+	System.out.println("Number is: "+n);
+	System.out.println("if a number is even +2 and if a number is odd +1");
+	while(n!=0)
+	{
+	 sum=n%10;
+	 if(n%2==0)
+	  sum=sum+2;
+	 else
+	  sum=sum+1;
+	 System.out.println(sum);
+	 n=n/10;
+	 count++;
+	}
+	System.out.println("no. of digits of "+num+" is "+count);
+	}
+}
+Output:-
+Number is: 17546
+if a number is even +2 and if a number is odd +1
+8
+6
+6
+8
+2
+no. of digits of 17546 is 5
+------------------------------------------------------------------
+12.
+public class reverse_sum 
+{
+	public static void main(String[] args) 
+	{
+	int n=345,sum=0;
+	while(n!=0)
+	{
+		System.out.print(n%10);
+		sum=sum+n%10;
+		n=n/10;
+	}
+	System.out.println("\n"+"sum of reverse is:"+sum);
+	}
+	
+
+}
+Output:-
+543
+sum of reverse is:12
+------------------------------------------------------------------
+13.
+public class reverseprime {
+
+	public static void main(String[] args) 
+	{
+		int i=31,rem=0,sum=0,count=0,n=2;
+		while(i!=0)
+		{
+			rem=i%10;//31%10=1//3%10=3
+			sum=sum*10+rem;//0*10+1=1//1*10+3=13
+			i=i/10;//31/10=3//3/10=0
+			
+		}
+		
+		System.out.println("resverse digit is:"+sum);
+		while(n<=sum/2)//2<6
+		{
+			if(sum%n==0)//13%2=1
+			{
+				count++;//1//
+			}
+		n++;
+		}
+		if(count==0)
+		  System.out.println(sum+" :is prime");
+		else
+		  System.out.println(sum+" :is not prime");
+		System.out.println(count+ "-Iterations");
+			
+
+	}
+
+}
+Output:-
+resverse digit is:13
+13 :is prime
+0-Iterations
+------------------------------------------------------------------
+14.
+public class reverseprog 
+{
+	public static void main(String[] args) 
+	{
+		int i=727,rem=0,sum=0,num=i;
+		while(i>0)
+		{
+		 rem=i%10;//727%10=7//72%10=2//7%10=7
+		 System.out.println(rem);
+		 sum=sum*10+rem;//0+7=7//7*10+2=72//72*10+7=727
+		 System.out.println(sum);
+		 i=i/10;//727/10=72//72/10=7//7/10=0
+		 System.out.println(i);
+			
+		}
+		System.out.println(sum);
+		if(num==sum)
+			System.out.println("palindrome");
+		else
+			System.out.println("not a palindrome");
+	}
+}
+Output:-
+7
+7
+72
+2
+72
+7
+7
+727
+0
+727
+palindrome
+------------------------------------------------------------------
+15.
+public class while_reverse {
+
+	public static void main(String[] args) 
+	{
+		int n=345;
+		while(n!=0)
+		{
+			System.out.print(n%10);
+			n=n/10;
+		}
+
+	}
+
+}
+Output:-
+543
+===============================================
+1.
+public class ExampleFor 
+{
+	public static void main(String args[] )
+	{
+		int x;
+		for(x=1;x<=10;x++)
+		{
+			
+			if(x==6)
+			{
+			continue;
+			}
+			System.out.println(x);
+		}
+	}
+
+}
+Output:-
+1
+2
+3
+4
+5
+7
+8
+9
+10
+-----------------------------------------------------
+2.
+public class ExampleFor 
+{
+	public static void main(String args[] )
+	{
+		int x;
+		for(x=0;x<=10;x++)
+		{
+			
+			if(x==6)
+			{
+			break;
+			}
+			System.out.println(x);
+		}
+	}
+}
+Output:-
+1
+2
+3
+4
+5
+-----------------------------------------------------
+3.
+public class ExampleFor 
+{
+	public static void main(String args[] )
+	{
+		int x,y;
+		for(x=1,y=5;x<=5;x++,y--)
+		{
+			
+			if(x==6)
+			{
+			break;
+			}
+			System.out.println(x+" "+y);
+		}
+	}
+}
+-------------------------------------------------------
+4.
+public class ExampleFor 
+{
+	public static void main(String args[] )
+	{
+		int x=1,y=5;
+		for(;x<=5;)
+		{
+			
+			if(x==6)
+			{
+			break;
+			}
+			System.out.println(x+" "+y);
+			x++;
+			y--;
+		}
+	}
+
+}
+Output:-
+1 5
+2 4
+3 3
+4 2
+5 1
+------------------------------------------------------
+Note:-(For-Loop)
+We can have multiple number of intializations and multiple number of increment/decrement , But only one condition can be used.
+------------------------------------------------------
+5.
+public class SwitchCase {
+
+	public static void main(String[] args) 
+	{
+		int x=2;
+		switch(x)
+		{
+			case 1: System.out.println("case1");
+			break;
+			case 2: System.out.println("case2");
+			break;
+			case 3: System.out.println("case3");
+			break;
+			default:System.out.println("case4");
+		}
+
+	}
+
+}
+Output:-
+case2 
+----------
+public static void main(String[] args) {
+	    int number = 5;
+	    String dayOfWeek;
+
+	    switch (number) {
+	      case 1:
+	        dayOfWeek = "Monday";
+	        break;
+	      case 2:
+	        dayOfWeek = "Tuesday";
+	        break;
+	      case 3:
+	        dayOfWeek = "Wednesday";
+	        break;
+	      case 4:
+	        dayOfWeek = "Thursday";
+	        break;
+	      case 5:
+	        dayOfWeek = "Friday";
+	        break;
+	      case 6:
+	        dayOfWeek = "Saturday";
+	        break;
+	      case 7:
+	        dayOfWeek = "Sunday";
+	        break;
+	      default:
+	        dayOfWeek = "Invalid day number";
+	    }
+
+	    System.out.println(dayOfWeek);
+	  }
+-----------------------
+public static void main(String[] args) 
+{
+	String Branch="ECE";
+	int year=3;
+	switch(Branch)
+	{
+		case "CSE": System.out.println("CSE");
+		      switch(year)
+		      {
+		         case 1:System.out.println("I year, fee:89500");
+		         break;
+		         case 2:System.out.println("II year, fee:91500");
+		         break;
+		         case 3:System.out.println("III year, fee:92500");
+		         break;
+		         case 4:System.out.println("IV year, fee:93500");
+		         break;
+		      }
+		           
+		break;
+		case "IT": System.out.println("IT");
+		       switch(year)
+	           {
+	            case 1: System.out.println("I year, fee:89500");
+	            break;
+	            case 2: System.out.println("II year, fee:91500");
+	            break;
+	            case 3: System.out.println("III year, fee:92500");
+	            break;
+	            case 4: System.out.println("IV year, fee:93500");
+	             break;
+	      }
+		break;
+		case "ECE": System.out.println("ECE");
+	       switch(year)
+           {
+            case 1: System.out.println("I year, fee:89500");
+            break;
+            case 2: System.out.println("II year, fee:91500");
+            break;
+            case 3: System.out.println("III year, fee:92500");
+            break;
+            case 4: System.out.println("IV year, fee:93500");
+            break;
+           }
+           
+		break;
+		default: System.out.println("ENTER YOUR BRANCH");
+		
+		
+	}
+}
+o/p:-ECE
+     III year, fee:92500
+-------------------------------------------------------
+6.
+public class factadd 
+{
+
+  public static void main(String[] args) 
+  {
+      int num=543,rem=0,count=0,fact,sum=0,copy=num;
+      while(num!=0)
+      {
+    	  count++;
+    	  rem=num%10;
+    	  int a=rem; 
+    	  num=num/10;
+    	  fact=1;
+    	  while(rem!=0)
+    	  {
+    		fact=fact*rem;
+    		rem--;	
+    	  }  	 
+    	  System.out.println("factorial of "+a+" is:"+fact);
+    	  sum=sum+fact;
+      }
+      System.out.println("Sum of "+copy+" is:"+sum);
+      
+  }
+}
+Output:-
+factorial of 3 is:6
+factorial of 4 is:24
+factorial of 5 is:120
+Sum of 543 is:150
+---------------------------------------------------------
+7.
+public class TwistedPrime
+{
+
+		public static void main(String[] args) 
+		{
+			int i=68,rem=0,sum=0,count=0,n=2,copy=i,count1=0;//35!=53 1prime,1 not prime//68==86 both not primes
+			while(n<=i/2)
+			{
+			   if(copy%n==0)
+			   {
+				count1++;
+			   }
+			n++;
+			}
+			if(count1==0)
+			System.out.println(copy+":it is prime");
+			else
+			System.out.println(copy+":Not prime");
+			System.out.println(count+ "-Iterations");
+			while(i!=0)
+			{
+				rem=i%10;//31%10=1//3%10=3
+				sum=sum*10+rem;//0*10+1=1//1*10+3=13
+				i=i/10;//31/10=3//3/10=0
+			}
+			System.out.println("resverse digit is:"+sum);
+			while(n<=sum/2)//2<6
+			{
+				if(sum%n==0)//13%2=1
+				{
+					count++;//1//
+				}
+			n++;
+			}
+			if(count==0)
+				System.out.println(sum+" :is prime");
+			else
+				System.out.println(sum+" :it is not prime");
+			System.out.println(count+ "-Iterations");
+			
+			if(count1==count)
+				System.out.println("it is a twisted prime");
+			else
+				System.out.println("it is not a twisted prime");
+		}
+}
+Output:-
+68:Not prime
+0-Iterations
+resverse digit is:86
+86 :it is not prime
+1-Iterations
+it is not a twisted prime
+------------------------------------------------------------------------------------
+8.
+public class TwinPrime {
+
+	public static void main(String[] args) 
+	{
+    	 int n1=42,n2=45,sum1=0,count1=0,sum2=0,count2=0;
+    	 if(n1-n2==2||n1-n2==-2)
+    	 {
+    		 while(sum1<=n1/2)
+ 			{
+ 				if(n1%2==0)
+ 					count1++;
+ 			 n1++;
+ 			}
+    		 while(sum2<=n2/2)
+ 			{
+ 				if(n2%2==0)
+ 					count2++;	
+ 			n2++;
+ 			}
+ 			if(count1==count2)
+    		     System.out.println("it is a Twin Prime 1");
+ 			else
+ 	    		 System.out.println("it is not a Twin Prime 1");
+    	 }
+    	 else
+    		 System.out.println("it is not a Twin Prime 2");
+	}
+}
+Output:-
+it is not a Twin Prime 2//42,45
+it is a Twin Prime 1//13,19
+it is not a Twin Prime 1//2,4
+------------------------------------------------------------------------
+9.
+9_a
+public class PrimeRange 
+{
+	public static void main(String[] args) 
+	{
+		int num1=2,n=2,count=0;
+		while(num1<=100)
+		{
+		   while(n<=num1/2)
+		   {
+		    	if(num1%n==0)
+		    	{
+			    	count++;
+		    	     break;
+		    	}
+	    	 n++;		
+		   }
+		if(count==0)
+		{
+		System.out.println(num1); 
+		}
+		num1++;
+		}
+		
+	}
+
+}
+-----------------------
+9_b
+public class PrimeRange 
+{
+  public static void main(String[] args) 
+  {
+      int num1 = 2;
+      while (num1 <= 100) 
+      {
+	 int n = 2;
+	 int count = 0;
+	 while (n <= num1 / 2)
+         {
+	    if (num1 % n == 0) 
+            {
+	       count++;
+	       break;  // Break the inner loop if a divisor is found
+	    }
+	 n++;
+	 }
+	if (count == 0) 
+        {
+	  System.out.print(num1 + " ");
+	}
+        num1++;
+      }
+  }
+}
+--------------------------------
+9_c
+public class ForLoopPrimeRange {
+
+	public static void main(String[] args) 
+	{
+		int n,x,count;
+		for(n=2;n<=100;n++)
+		{
+			x=2;
+			count=0;
+			while(x<=n/2)
+			{
+			   if(n%x==0)
+				   count++;
+			 x++;
+			}
+			if(count==0)
+				System.out.println(n);
+		}
+				
+
+	}
+
+}
+Output:-
+2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97
+----------------------------------------------------------------------
+10.
+public class palindromeRange {
+
+	public static void main(String[] args) 
+	{
+		int x,n,rem=0,rev=0;
+		for(x=1;x<=1000;x++)
+		{   
+			n=x;
+			rev=0;
+		    while(n!=0)
+		    {
+		    	rem=n%10;
+		    	rev=rev*10+rem;
+		    	n=n/10;
+		    }
+		    if(x==rev)
+		    	System.out.println(x);
+		}
+
+	}
+
+}
+--------------------------
+11.
+public class ForAmstrongRange {
+
+	public static void main(String[] args) 
+	{
+		int n1;
+		for(n1=1;n1<=10000;n1++)
+		{
+			int n=n1,rev=0,count=0,p=0,b=0;
+			int	i=n,a=i;
+			while(n!=0)
+			{
+				rev=rev*10+n%10;
+				n=n/10;
+				count++;
+			}
+			while(i!=0)
+			{
+				b=i%10;
+				p=p+(int)Math.pow(b,count);
+				i=i/10;
+			}
+			if(p==a)
+				System.out.println(a);
+		}
+	}
+}
+----------------------------------------------------------
+12.
+public class ShilongRange 
+{
+	public static void main(String[] args) 
+	{
+		int fact;
+	    for(fact=1;fact<=1000;fact++)   
+		{	
+			int sum=0;
+			int product=1;
+		        int n=1;
+			int i=fact;
+		    while(n<=i/2)
+		    {
+		       if(i%n==0)
+		       {
+		           sum=sum+n;
+		           product=product*n;    
+		       }
+		      n++;
+		    }
+		    if(sum==product)
+			   System.out.print(fact+" ");
+		} 				   
+	}
+}
+o/p:-
+2 3 5 6 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 101 103 107 109 113 127 131 137 139 149 151 157 163 167 173 179 181 191 193 197 199 211 223 227 229 233 239 241 251 257 263 269 271 277 281 283 293 307 311 313 317 331 337 347 349 353 359 367 373 379 383 389 397 401 409 419 421 431 433 439 443 449 457 461 463 467 479 487 491 499 503 509 521 523 541 547 557 563 569 571 577 587 593 599 601 607 613 617 619 631 641 643 647 653 659 661 673 677 683 691 701 709 719 727 733 739 743 751 757 761 769 773 787 797 809 811 821 823 827 829 839 853 857 859 863 877 881 883 887 907 911 919 929 937 941 947 953 967 971 977 983 991 997 
+-------------------------------------------------------
+13.
+public class MagicRange {
+
+	public static void main(String[] args) 
+	{
+		int x;
+		for(x=1;x<=1000;x++) 
+		{
+			int n=x;
+			int rem=0;
+			int sum=0;
+			int mul=1;
+			while(n!=0)
+			{
+				rem=n%10;
+				sum=sum+rem;
+				mul=mul*rem;
+				n=n/10;
+			}
+			if(sum==mul)
+				System.out.print(x+" ");
+		}
+	}
+}
+o/p:-
+1 2 3 4 5 6 7 8 9 22 123 132 213 231 312 321 
+----------------------------------------------------
+14.
+public class LeapYearRange {
+
+	public static void main(String[] args) 
+	{
+	   int year;
+	   for(year=1855;year<=2024;year++)
+	   {
+	     if((year%4==0&&year%100!=0)||year%400==0)
+	      {
+	         System.out.println(year+" Leap Year");
+	      }
+             else
+	         System.out.println(year+" Not a Leap Year");
+	   }
+
+	}
+}
+__________________________________________________________
+        *********PATTERNS********
+1.
+public class pattern {//retangle
+
+	public static void main(String[] args) 
+	{
+	  for(int i=1;i<=5;i++)//5 rows
+		{
+			
+			for(int j=1;j<=7;j++)//7 columns
+			{	
+			 System.out.print("* ");
+			}  
+			System.out.println();
+		}
+	}	
+}
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * *
+2.
+public class pattern {//$  symbol in their respective cordinates
+
+	public static void main(String[] args) 
+	{
+	  for(int i=1;i<=7;i++)//rows
+		{
+			
+			for(int j=1;j<=7;j++)//columns
+			{	
+				if((i==1&&j==2)||
+                                   (i==2&&j==5)||
+                                   (i==3&&j==3)||
+                                   (i==7&&j==7))
+			        System.out.print("$ ");
+				else
+			        System.out.print("* ");	 
+			}  
+			System.out.println();
+		}
+	}	
+}
+O/p:-
+* $ * * * * * 
+* * * * $ * * 
+* * $ * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * $ 
+3.
+for (int r = 1; r <=7; r++) 
+		{
+		      for (int c = 1; c <=7; c++) 
+		      {  
+		    	  if(r==1 ||
+		    	     r==2 && ( c==1 || c==2 || c==7) || 
+		    	     r==3 && ( c==1 || c==3 || c==7) || 
+		    	     r==4 && ( c==1 || c==4 || c==7) ||
+		    	     r==5 && ( c==1 || c==5 || c==7) ||
+		    	     r==6 && ( c==1 || c==6 || c==7) || 
+		    	     r==7)
+		    	      System.out.print("* "); 
+		    	  else
+		               System.out.print("  ");
+		      }
+		      System.out.println();	   
+		 }
+O/p:-
+* * * * * * * 
+* *         * 
+*   *       * 
+*     *     * 
+*       *   * 
+*         * * 
+* * * * * * * 
+4.
+for(int i=7;i>=1;i--)                                        
+{
+			
+   for(int j=1;j<=i;j++)
+	{	
+	 System.out.print("* ");
+	}  
+System.out.println("  ");
+}
+o/p:-
+* * * * * * *   
+* * * * * *   
+* * * * *   
+* * * *   
+* * *   
+* *   
+*
+----
+for(int i=1;i<=5;i++)
+{
+  for(int j=1;j<=i;j++)
+   {	
+	 System.out.print("* ");
+   }  
+  System.out.println("  ");
+}
+o/p:-
+*   
+* *   
+* * *   
+* * * *   
+* * * * * 
+5.
+for(int i=5;i>=1;i--)
+		{
+			
+			for(int j=1;j<=i;j++)
+			{	
+			 System.out.print(j);//Numbers Patterns
+			}  
+			System.out.println("  ");
+		}
+o/p:-
+12345  
+1234  
+123  
+12  
+1 
+--------
+for(int i=1;i<=5;i++)
+		{
+			for(int j=1;j<=i;j++)
+			{	
+			 System.out.print(j);
+			}  
+			System.out.println("  ");
+		}
+o/p:-
+1  
+12  
+123  
+1234  
+12345
+ 7.
+for (int i = 1; i <= 5; i++) //1
+		{
+		    for (int j = 5; j >i; j--) //5>1//4>1//3<1
+		    {
+		        System.out.print(" ");
+		    }
+		    for (int k = 1; k <= i; k++)/*    *     (1<=1)
+		                                     * *    (2<=2)
+		                                    * * *   (3<=3)
+		                                   * * * *  (4<=4)
+		                                  * * * * * (5<=5)
+		                                              */
+		    {
+		        System.out.print("* ");
+		    }
+		    System.out.println();
+		} 
+----------------------------
+                for (int i = 5; i >= 1; i--) //1
+		{
+		    for (int j = 5; j >i; j--) //5>1//4>1//3<1
+		    {
+		        System.out.print(" ");
+		    }
+		    for (int k = 1; k <= i; k++)/* * * * * * 
+		                                    * * * * 
+                                                     * * * 
+                                                      * * 
+                                                       * 
+ 
+		                                              */
+		    {
+		        System.out.print("* ");
+		    }
+		    System.out.println();
+		} 
+8.
+                int r=4,c=5;
+		for(int i=1;i<=r;i++)//1//2//3//4//
+		{
+		  for(int j=1;j<=c;j++)/* -**** /1<=5
+		                          --*** /2<=5
+		                          ---** /3<=5
+		                          ----* /4<=5
+		                                 */
+		   {	
+			  if(j<=i)//1<=1(T)//2<=2(T)//3<=3(T)//4<=4(T)//5<=4(F)
+			  System.out.print("- ");
+			  else
+				  System.out.print("* ");
+		   }  
+		  System.out.println("  ");
+		}
+9.
+              for(int i=1;i<=5;i++)
+	      {
+		  for(int j=1;j<=i;j++)/*  *   
+                                           * *   
+                                           * * *   
+                                           * * * *   
+                                           * * * * *   */   
+		   {	
+			 System.out.print("* ");
+		   }  
+		  System.out.println("  ");
+	      }	
+		for(int i=1;i<=4;i++)/* 
+                                        * * * *   
+                                        * * *   
+                                        * *   
+                                        *         */
+
+		{
+			for(int k=4;k>=i;k--)
+			{
+			System.out.print("* ");
+			}
+			System.out.println("  ");
+		}
+o/p:-
+*   
+* *   
+* * *   
+* * * *   
+* * * * *   
+* * * *   
+* * *   
+* *   
+*
+10.
+                int rows = 5, columns = 5;
+		for (int i = 1; i <= rows; i++)
+                {
+		    for (int j = 1; j <= columns; j++) 
+                    {
+		        if (i == 1 || i == rows || j == 1 || j == columns || j == columns - i + 1) 
+                        {
+		            System.out.print("* ");
+		        } 
+                        else 
+		            System.out.print("  ");
+		    }
+		    System.out.println();
+		}
+o/p:-
+* * * * * 
+*     * * 
+*   *   * 
+* *     * 
+* * * * * 
+11.
+                int rows = 5, columns = 5;
+		for (int i = 1; i <= rows; i++) 
+		{
+		    for (int j = 1; j <= columns; j++) 
+		    {
+		        if (i == 1 ||
+                            i == rows || 
+                            j == 1 || 
+                            j == columns || 
+                            j == rows - i +1||
+                            j==i)
+		            System.out.print("* ");
+		        else 
+		            System.out.print("  ");
+		    }
+		    System.out.println();
+		}
+O/p:-
+* * * * * 
+* *   * * 
+*   *   * 
+* *   * * 
+* * * * * 
+12.
+for (int i = 1; i <= 5; i++) //1
+		{
+		    for (int j = 5; j >i; j--) //5>1//4>1//3<1
+		    {
+		        System.out.print(" ");
+		    }
+		    for (int k = 1; k <= i; k++)
+		    {
+		        System.out.print(i+" ");
+		    }
+		    System.out.println();
+		}
+o/p:-
+    1 
+   2 2 
+  3 3 3 
+ 4 4 4 4 
+5 5 5 5 5 
+13.
+public static void main(String[] args) 
+{
+	  Scanner sc=new Scanner(System.in);
+	  System.out.print("enter row1 value:");
+	  int row1=sc.nextInt();
+	  System.out.print("enter row2 value:");
+	  int row2=sc.nextInt();
+      //int y=sc.nextInt();
+	  for(int x=row1;x>=1;x--)
+	  {
+		  for(int y=4;y>=x;y--)
+		  {
+			  System.out.print(y+" ");
+		  }
+		  System.out.println();
+	  }
+	  
+	  for(int j=1;j<=row2;j++)
+	  {
+		  for(int i=4;i>=j;i--)
+		  {
+			  System.out.print(i+" ");
+		  }
+		  System.out.println();
+	  }
+	}
+enter row1 value:4
+enter row2 value:4
+4 
+4 3 
+4 3 2 
+4 3 2 1 
+4 3 2 1 
+4 3 2 
+4 3 
+4
+14. Hallow inverted number triangle : 
+	  Scanner sc=new Scanner(System.in);
+	  System.out.print("enter row1 value:");
+	  int row2=sc.nextInt();
+	  
+	  
+	  for(int j=1;j<=row2;j++)
+	  {
+		  for(int i=row2;i>=j;i--)
+		  {
+			  
+			  if(j==1||j==2&&(i==4||i==2)||j==3&&(i==4||i==3)||j==4)
+				  System.out.print(i+" ");
+			  else
+				  System.out.print("  ");
+		  }
+		  System.out.println();
+	  }
+o/p:-
+enter row1 value:4
+4 3 2 1 
+4   2 
+4 3 
+4
+15.
+public static void main(String[] args) 
+{
+	  int count=0;
+	  Scanner sc=new Scanner(System.in);
+	  System.out.print("enter row1 value:");
+	  int row1=sc.nextInt();
+	  System.out.print("enter no: of col:");
+	  int col=sc.nextInt(); 
+	  for(int x=row1;x>=1;x--)
+	  {
+		  for(int y=col;y>=x;y--)
+		  {
+			  count++;
+			  System.out.print(count+" ");
+		  }
+		  System.out.println();
+	  }
+}
+o/p:-
+enter row1 value:4
+enter no: of col:4
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+16.
+import java.util.Scanner;
+public class application {
+
+	public static void main(String[] args) 
+	{
+     Scanner s= new Scanner(System.in);
+     System.out.println("Enter a number to check odd or even:");
+     int b=1;
+     while(b==1)
+     {
+     int a=s.nextInt();
+     if(a%2==0)
+    	System.out.println("Even");
+     else
+    	 System.out.println("Odd");
+     System.out.println("Do you want to continue: 1 for 'Yes' (or) 0 for 'No'");
+     b=s.nextInt(); 
+     if(b==1)
+    	 System.out.println("Enter a Number:");
+     else
+    	 System.out.println("Thank You");
+     }
+	}
+
+}
+o/p:-
+Enter a number to check odd or even:
+4
+Even
+Do you want to continue: 1 for 'Yes' (or) 0 for 'No'
+1
+Enter a Number:
+5
+Odd
+Do you want to continue: 1 for 'Yes' (or) 0 for 'No'
+------
+17.
+(1) for(int i=1;i<=5;i++)
+	{
+		for(int j=1;j<=i;j++)
+		{	
+		 System.out.print(j);
+		}  
+		System.out.println("  ");
+	}
+o/p:-
+1  
+12  
+123  
+1234
+(2)for(int i=1;i<=rows;i++)
+	  {
+		  for(int a=rows-i;a>=1;a--)
+		  {
+			  System.out.print("  ");
+		  }
+		  for(int j=i;j>=1;j--) 
+	      {
+		      System.out.print(j+" ");
+		  }
+		  System.out.println();
+	  }
+enter row value:4
+      1 
+    2 1 
+  3 2 1 
+4 3 2 1 
+for(int i=1;i<=rows;i++)
+	  {
+		  
+		  for(int j=i;j>=1;j--) 
+	      {
+		      System.out.print(j+" ");
+		  }
+		  System.out.println();
+	  }
+enter row value:4
+1 
+2 1 
+3 2 1 
+4 3 2 1 
+(3) for(int i=rows;i>=1;i--)
+	  {
+		  for(int j=1;j<=i;j++) 
+	      {
+		      System.out.print(j+" ");
+		  }
+		  System.out.println();
+	  }
+enter row value:4
+1 2 3 4 
+1 2 3 
+1 2 
+1 
+(4)for(int i=rows;i>=1;i--)
+	  {
+		  for(int a=rows-i;a>=1;a--)
+		  {
+			  System.out.print("  ");
+		  }
+		  for(int j=i;j>=1;j--) 
+	      {
+		      System.out.print(j+" ");
+		  }
+		  System.out.println();
+	  }
+enter row value:4
+4 3 2 1 
+  3 2 1 
+    2 1 
+      1 
+(5) 
+for(int i=rows;i>=1;i--)
+	  {
+		  for(int j=rows;j>=i;j--) 
+	      {
+		      System.out.print(j+" ");
+		  }
+		  System.out.println();
+	  }
+enter row value:4
+4 
+4 3 
+4 3 2 
+4 3 2 1 
+
+(6)for(int i=rows;i>=1;i--)
+	  {
+		  for(int a=1;a<=i;a++)
+		  {
+			  System.out.print(" ");
+		  }
+		  for(int j=i;j<=rows;j++) 
+	      {
+		      System.out.print(j);
+		  }
+		  System.out.println();
+	  }
+enter row value:4
+enter row value:4
+    4
+   34
+  234
+ 1234
+
+(7)for(int i=1;i<=rows;i++)
+	  {
+		  
+		  for(int j=col;j>=i;j--) 
+	      {
+		      System.out.print(j);
+		  }
+		  System.out.println();
+	  }
+enter row value:4
+enter row value:4
+4321
+432
+43
+4
+(8)for(int i=1;i<=rows;i++)
+	  {
+		  for(int a=1;a<=i;a++)
+		  {
+			  System.out.print(" ");
+		  }
+		  for(int j=i;j<=rows;j++) 
+	      {
+		      System.out.print(j);
+		  }
+		  System.out.println();
+	  }
+enter row value:4
+enter row value:4
+ 1234
+  234
+   34
+    4
+
+
+
+----------------------------------------------------------
+               JAVA EXECUTION_TEST SANDEEP
+----------------------------------------------------------
+1.
+class Prime
+{
+  public static void main(String args[])
+  {
+    int a=2,i=2,count=0;
+    while(i<=a/2)
+    {
+       if(a%i==0)
+          count++;
+     i++;
+    }
+    if(count==0)
+      System.out.println("Prime");
+    else
+      System.out.println("Not a prime");
+  }
+}
+-----------------------------------------------
+2.
+class fibonacci
+{
+  public static void main(String args[])
+  {
+      int f=0,s=1,t;
+      System.out.print(f+"\t"+s);
+      while(f<=20)
+      {
+         t=f+s;
+         s=f;
+         t=s;
+      System.out.print("\t"+t);   
+      f++;  
+      } 
+  }
+}
+------------------------------------------------
+3.
+class palindrome
+{
+  public static void main(String args[])
+  {
+   int n=535,rem=0,sum=0,i=n;
+   while(n!=0)
+   {  
+    rem=n%10;
+    n=n/10;
+    sum=sum*10+rem;
+   }
+   System.out.println("number is:"+i);
+   System.out.println("Reversed number is:"+sum);
+   if(sum==i)   
+   System.out.print("Palindrome");
+   else
+   System.out.print("Not a Palindrome");
+  }
+}
+--------------------------------------------------
+4.
+class character
+{
+  public static void main(String args[])
+  {
+   char a='a';
+   if(a>='A'&&a<='Z')
+   System.out.print("It is Capital");
+   else if(a>='a'&&a<='z')
+   System.out.print("It is Small");
+   else if(a>=0&&a<=0)
+   System.out.print("It is a Number");
+   else
+   System.out.print("It is a Symbol");
+  }
+}
+---------------
+class character
+{
+  public static void main(String args[])
+  {
+   char a='6';
+   if(a>='65'&&a<='90')
+   System.out.print("It is Capital");
+   else if(a>='97'&&a<='122')
+   System.out.print("It is Small");
+   else if(a>=48 && a<=57)
+   System.out.print("It is a Number");
+   else
+   System.out.print("It is a Symbol");
+  }
+}
+------------------------------------------------
+4.
+class shilong
+{
+  public static void main(String args[])
+  {
+   int n=1,fact=6,sum=0,product=1;
+   System.out.print(fact+" is ");
+   while(n<=fact/2)
+   {
+      if(fact%n==0)
+      {
+        sum=sum+n;
+        product=product*n;        
+      }
+    n++;
+   }
+   if(sum==product)
+   System.out.println("Shilong");
+   else
+   System.out.println("Not a Shilong");
+  }
+}
+--------------------------------------------------
+6.
+class HCF
+{
+  public static void main(String args[])
+  {
+   int a=100,b=70,n=2,n1=2,count1=0,count2=0,c=0;
+   while(n<=a/2)
+   {
+     if(a%n==0)
+     {
+       System.out.println(a+" fact is"+n);
+     }  
+    n++;
+   }
+   while(n1<=b/2)
+   {
+     if(b%n1==0)
+     {
+       System.out.println(b+" fact is"+n1);
+     }
+    n1++;
+   }
+   int a1=a,b1=b,n2=2;
+   while(a1>n2 && b1>n2)
+   {
+      if(a1%n2==0 && b1%n2==0)
+      {
+           c=n2;
+      }  
+      else
+        System.out.println("No comman Factors");       
+     n2++;
+   }
+    System.out.println("HCF is:"+c);
+  }
+}
+--------------
+class hcfprcat
+{
+  public static void main(String args[])
+  {
+    int n1=10,n2=100;
+    int temp=0;
+    int result=n1<n2?n1:n2;
+    int i=1;
+    while(i<=result)
+    {
+      if(n1%i==0&&n2%i==0)
+      {
+        temp=i;
+      }
+    i++;
+    }
+    System.out.println(temp);
+  }
+}
+------------------------------------------------
+7.
+class Roman
+{
+  public static void main(String args[])
+  {
+  int num=74530,n=0,rem=0,x;
+   while(num!=0)
+   {
+     rem=num%10;
+        switch(x=rem)
+        {
+        case 7:System.out.println("VII"+" ");
+        break;
+        case 4:System.out.print("IV"+" ");
+        break;
+        case 5:System.out.print("V"+" ");
+        break;
+        case 3:System.out.print("II"+" ");
+        break;
+        case 0:System.out.print("0"+" ");
+        break;
+        default:System.out.println("NOTHING");
+        }
+    num=num/10;
+   }
+  }
+}
+-----------
+class Roman
+{
+  public static void main(String args[])
+  {
+  int num=74530,sum=0,rem=0,count1=0,rev=0,count2=0,count3=0;
+   while(num!=0)
+   {
+     rem=num%10;
+     sum=sum*10+rem;
+    num=num/10;
+    count1++;
+   }
+   
+   while(sum!=0)
+   {
+    rem=sum%10;
+    rev=rev*10+rem;
+     if(rem==1)
+     System.out.print(" I");
+     else if(rem==2)
+     System.out.print(" II");
+     else if(rem==3)
+     System.out.print(" III");
+     else if(rem==4)
+     System.out.print(" IV");
+     else if(rem==5)
+     System.out.print(" V");
+     else if(rem==6)
+     System.out.print(" VI");
+     else if(rem==7)
+     System.out.print(" VII");
+     else if(rem==8)
+     System.out.print(" VIII");
+     else if(rem==9)
+     System.out.print(" IX");
+     sum=sum/10;
+   count2++;
+   }
+   count3=count1-count2;
+   while(count3>=1)
+   {
+    System.out.print(" 0");
+   count3--;
+   }
+  }
+}
+-------------------------------------------------
+8.
+class Min
+{
+  public static void main(String args[])
+  {
+    int n=796358,rem=0,min=0;
+    min=n%10;
+    while(n!=0)
+    {
+     rem=n%10;
+     if(min>rem)
+        min=rem;
+    
+    n=n/10;
+    }
+    System.out.println(min);
+  }
+}
+--------------------------------------------------
+9.
+public class ascii
+{
+    public static void main(String args[] )
+    {
+      char x=0;
+      int y;
+      while(x<=256)
+      {
+         y=x;
+         System.out.println(y+"="+x);
+       x++;
+      }
+    }
+}
+--------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

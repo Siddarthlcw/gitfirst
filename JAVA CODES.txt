@@ -1,0 +1,2439 @@
+JAVA CLASS PROGRAMMS  
+===============================================================================================================================
+class Main
+{
+	public static void main(String[] args) 
+	{
+	    int b1=10,b2=35;
+	    System.out.println("BEFORE SWAP");
+	    System.out.println(b1);
+		System.out.println(b2);
+	    b1=b1+b2;//b1=b1^b2;
+	    b2=b1-b2;//b2=b1^b2;
+	    b1=b1-b2;//b1=b1^b2;
+	    System.out.println("AFTER SWAP");
+		System.out.println(b1);
+		System.out.println(b2);
+	}
+}
+
+OUTPUT:
+BEFORE SWAP
+10
+35
+AFTER SWAP
+35
+10
+--------------------------
+class Main
+{
+	public static void main(String[] args) 
+	{
+	    int _X1=12.3;
+		System.out.println(_X1);
+	}
+}
+output:error: incompatible types: possible lossy conversion from double to int
+	    int _X1=12.3;
+	            ^
+1 error
+
+class Main
+{
+	public static void main(String[] args) 
+	{
+	    int _X1=(int)(12.3);
+		System.out.println(_X1);
+	}
+}
+
+output:12
+----------------------
+C:\Users\Saikiran\OneDrive\Desktop\ch_16>javac ch1.java
+
+C:\Users\Saikiran\OneDrive\Desktop\ch_16>java first
+Hello world!
+---------------------
+product ouput:
+
+C:\Users\Saikiran\OneDrive\Desktop\ch_16>javac product.java
+
+C:\Users\Saikiran\OneDrive\Desktop\ch_16>java shop
+
+WELCOME TO SAIKI SHOPPING MALL:
+Total price is 14985.0
+Discount is 2547
+Total After Discount is 12437.55
+Total After taxses is 14676
+If you have a coupon please enter here:
+Couponcode Discount is 2935
+Total After couponcode Discount is 11741
+Grand Total is 11497
+THANK YOU VISIT AGAIN
+----------------------------------------------
+C:\Users\Saikiran\OneDrive\Desktop\ch_16>javac employeetask.java
+
+C:\Users\Saikiran\OneDrive\Desktop\ch_16>java employee
+
+EMPLOYEE Name: B.Saikiran
+EMPLOYEE ID: 19P71A0461
+EMPLOYEE Designation: Software Developer
+EMPLOYEE Department: IT
+No of Working days: 25
+No of Days present : 23
+EMPLOYEE Actual Salary: 25000.0
+EMPLOYEE Recived Salary: 23000.0
+Employee salary before hike: 25000.0
+Hike Given: 6250.0
+Employee salary After hike: 31250.0
+--------------------------------------------------------
+class Main
+{
+	public static void main(String[] args)
+	{
+	    if(false)
+	    {
+	        if(true)
+	            System.out.println("if if"); 
+	        else
+	            System.out.println("if else"); 
+	    }
+		else
+		{
+		    if(true)
+		        System.out.println("else if"); 
+		    else
+		        System.out.println("else else"); 
+		}
+	}
+}
+o
+:else if
+--------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {
+  int l=4,b=5,area,per;
+  area=l*b;
+  per=2*(l+b);
+  if(area>per)
+     System.out.println("the area of the rectangle is greater than its perimeter.");
+  else
+     System.out.println("the perimeter of the rectangle is greater than its area.");
+
+  }
+}
+o:the area of the rectangle is greater than its perimeter.
+---------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {
+  char c='L';
+  if(c>=65 && c<=90)              //if(c>='A' && c<='Z')
+     System.out.println("It is a upper case");
+  else if(c>=97 && c<=122)           //else if(c>='a' && c<='z')
+     System.out.println("It is a lower case");
+  else if(c>=48 && c<=57)           //else if(c>='0' && c<='9')
+     System.out.println("It is a digit");
+  else
+   System.out.println("It is a special case");
+  }
+}
+
+o:It is a upper case
+----------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {
+  int hard=66,tensile=4500;
+  double carbon=0.5;
+  if(hard>50 && carbon<0.7 && tensile>5600)
+     System.out.println("Grade is 10");
+  else if(hard>50 && carbon<0.7)
+     System.out.println("Grade is 9");
+  else if(hard>50 && carbon<0.7)
+   System.out.println("Grade is 8");
+  else if(hard>50 && tensile>5600  )
+   System.out.println("Grade is 7");
+  else if(hard>50 || carbon<0.7 || tensile>5600)
+    System.out.println("Grade is 6");
+  else
+    System.out.println("Grade is 5");
+  }
+}
+o:Grade is 9
+-------------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {
+  int days=12;
+  if(days>0 && days<6)
+     System.out.println("Your late to return the book for "+days+" days so pay fine rs.50 paise");
+  else if(days>5 && days<11)
+     System.out.println("Your late to return the book for "+days+" days so pay fine rs.1 rupee");
+  else if(days>10 && days<31)
+     System.out.println("Your late to return the book for "+days+" days so pay fine rs.5 rupees");
+  else
+     System.out.println("Your late to return the book for "+days+" your membership is cancelled");
+  }
+}
+ o: Your late to return the book for 12 days so pay fine rs.5 rupees
+-------------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {
+  int a=70,b=35;
+  if(a>=55 && b>=45)
+     System.out.println("Your passed");
+  else if(a>=45 && b>=55)
+     System.out.println("Your passed");
+  else if(a>=65 && b<=45)
+     System.out.println("Your are reappear in an examination in B to qualify");
+  else
+     System.out.println("Your failed");
+  }
+}
+o:Your are reappear in an examination in B to qualify
+----------------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {
+  String health="good",lives="city",gender="female";
+  int age=33;
+  double premimum=25500,policy;
+  if(age>=25 && age<=35 && health=="good" && lives=="city" && gender=="male" && premimum<=200000)
+  {
+    policy=premimum*4/1000;
+    System.out.println("The premium is Rs.4 per thousand total is:"+policy);
+
+  }
+  else if(age>=25 && age<=35 && health=="good" && lives=="city" && gender=="female" && premimum<=100000)
+ {
+    policy=premimum*3/1000;
+    System.out.println("The premium is Rs.3 per thousand total is:"+policy);
+
+  }
+  else if(age>=25 && age<=35 && health=="poor" && lives=="village" && gender=="male" && premimum<=10000)
+  {
+    policy=premimum*6/1000;
+    System.out.println("The premium is Rs.6 per thousand total is:"+policy);
+
+   }
+  else
+     System.out.println("Not insured");
+  
+  }
+}
+o: The premium is Rs.3 per thousand total is:76.5
+----------------------------------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {
+  char ch='r';
+  if(ch=='a' || ch=='e' || ch=='i' ||  ch=='o' ||  ch=='u' ||  ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U')
+     System.out.println(ch+" is a Vowel");
+  else
+     System.out.println(ch+" is not a Vowel");
+  
+  }
+}
+o: r is not a Vowel
+---------------------------------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {
+  String course="JavaFullStack",gender="male";
+  int age=38;
+  double prec=68;
+  if(age>=25 && age<=40 && prec>65 && gender=="male" && course=="JavaFullStack" || gender=="female" && age>=20 && age<=35 )
+    System.out.println("Your elgible");
+  else
+     System.out.println("Your not elgible");
+  
+  }
+}
+
+/*
+class pract
+{
+  public static void main(String[] args)
+  {
+  String course="JavaFullStack",gender="female";
+  int age=33;
+  double prec=68;
+  if(age>=25 && age<=40 && prec>65 && course=="JavaFullStack" && gender=="male")
+    System.out.println("Your elgible");
+  else if(age>=20 && age<=35 && prec>65 && course=="JavaFullStack" && gender=="female")
+    System.out.println("Your elgible");
+  else
+     System.out.println("Your not elgible");
+  
+  }
+}
+*/
+o: Your elgible
+=========================================================================================
+USER INPUT 
+=========================================================================================
+import java.util.Scanner;
+class pract
+{
+  public static void main(String[] args)
+  {
+  Scanner s= new Scanner(System.in);
+  System.out.println("Enter your age: ");
+  int age = s.nextInt(),code=s.nextInt();
+  System.out.println("your age is : "+age);
+  System.out.println("your code is : "+code);
+  s.close();
+  }
+}
+ o: Enter your age:
+23
+2356
+your age is : 23
+your code is : 2356
+-----------------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {
+   for (int i = 1; i < 11; i++)
+       System.out.println(i+".Coding Hub");
+  }
+}
+o:
+1.Coding Hub
+2.Coding Hub
+3.Coding Hub
+4.Coding Hub
+5.Coding Hub
+6.Coding Hub
+7.Coding Hub
+8.Coding Hub
+9.Coding Hub
+10.Coding Hub
+
+class pract
+{
+  public static void main(String[] args)
+  {
+   for (int i = 1; i < 11; i++)
+       System.out.print("CodingHub ");
+  }
+}
+o:CodingHub CodingHub CodingHub CodingHub CodingHub CodingHub CodingHub CodingHub CodingHub CodingHub
+--------------------------------------------------------
+import java.util.Scanner;
+class pract
+{
+  public static void main(String[] args)
+  {
+   Scanner s= new Scanner(System.in);
+   System.out.println("Enter a number: ");
+   int a= s.nextInt(),b=1;
+   for (int i=0; i < a; i++)
+     b*=(a-i);
+   System.out.println("Factorial of "+a+" is "+b);
+   s.close();
+  }
+}
+o:
+Enter a number:
+5
+Factorial of 5 is 120
+
+import java.util.Scanner;
+class pract
+{
+  public static void main(String[] args)
+  {
+   Scanner s= new Scanner(System.in);
+   System.out.println("Enter a number: ");
+   int a= s.nextInt(),a1,b=1;
+   a1=a;
+   for (; a > 0; a--)
+     b*=a;
+   System.out.println("Factorial of "+a1+" is "+b);
+   s.close();
+  }
+}
+
+o:
+Enter a number:
+5
+Factorial of 5 is 120
+-------------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {
+   int a=10,b=20;
+   for (int i = a; i < b+1; i++)
+      System.out.println(i);
+  }
+}
+0:10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+--------------------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {
+   int a=30,result=0;
+   for (int i = 1; i < a+1; i++)
+       result=result+i;
+   System.out.println("sum of "+a+" natural numbers is: "+result);
+  }
+}
+0: sum of 30 natural numbers is: 465
+
+class pract
+{
+  public static void main(String[] args)
+  {
+   int a=30,a1=a,result=0;
+   for (; a >0; --a)
+       result=result+a;
+   System.out.println("sum of "+a1+" natural numbers is: "+result);
+  }
+}
+------------------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {
+   int g1=23,g2=55,g3=12;
+   if(g1>g2)
+   {
+      if(g1>g3)
+	 System.out.println("g1 is high marks"); 
+      else
+         System.out.println("g3 is high marks");
+   }
+   else 
+   {
+    if(g2>g3)
+	 System.out.println("g2 is high marks"); 
+      else
+         System.out.println("g3 is high marks");
+   }
+  }
+}
+o:g2 is high marks
+--------------------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {
+   int g1=23,g2=55,g3=12,g;
+   g=g1>g2 ? (g1>g3 ? g1 : g3 ) : (g2>g3 ? g2 : g3 );
+   System.out.println("The Greatest number is: "+g);
+  }
+}
+0:The Greatest number is: 55
+--------------------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {
+   int a=2,b=4;
+   double r=Math.pow(a,b);
+   System.out.println(a+" to the power of "+b+" is "+r);
+  }
+}
+0: 2 to the power of 4 is 16.0
+---------------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {
+  char ch='A';
+  if(ch!='a' && ch!='e' && ch!='i' &&  ch!='o' &&  ch!='u' && ch!='A' && ch!='E' && ch!='I' && ch!='O' && ch!='U')
+     System.out.println(ch+" is consonant");
+  else
+     System.out.println(ch+" is a Vowel");
+  
+  }
+}
+-----------------------------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {
+  char ch='t';
+  int ch2;
+  if (ch>='A' && ch<='Z')
+  { 
+    ch2=ch+32;
+    System.out.println((char)ch2);
+  }
+  else if (ch>='a' && ch<='z')
+  { 
+    ch2=ch-32;
+    System.out.println((char)ch2);
+  }
+	
+  else
+     System.out.println("Enter only Alphabets");
+  
+  }
+}
+ 0: T
+
+===
+
+class pract
+{
+  public static void main(String[] args)
+  {
+  char ch='t';
+  if (ch>='A' && ch<='Z')
+    System.out.println((char)(ch+32));
+  else if (ch>='a' && ch<='z')
+    System.out.println((char)(ch-32));
+  else
+     System.out.println("Enter only Alphabets");
+  
+  }
+}
+------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+class pract
+{
+  public static void main(String[] args)
+  {
+   Scanner s= new Scanner(System.in);
+   System.out.println("Enter a number: ");
+   int a= s.nextInt();
+   for(int i=1;i<11;i++)
+     System.out.println(a+" * "+i+" = "+a*i); 
+   s.close();
+  }
+}
+0:Enter a number:
+15
+15 * 1 = 15
+15 * 2 = 30
+15 * 3 = 45
+15 * 4 = 60
+15 * 5 = 75
+15 * 6 = 90
+15 * 7 = 105
+15 * 8 = 120
+15 * 9 = 135
+15 * 10 = 150
+-------------------------------------------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {
+  int year=2020;
+  if (year%4==0 && year%100!=0 || year%400==0)
+    System.out.println(year+" is a leap year");
+  else
+     System.out.println(year+" is not a leap year");
+  
+  }
+}
+0: 2020 is a leap year
+---------------------------------------------
+import java.util.Scanner;
+class pract
+{
+  public static void main(String[] args)
+  {
+   Scanner s= new Scanner(System.in);
+   System.out.println("Enter a number: ");
+   int a= s.nextInt(),p_count=0,n_count=0,zeros_count=0;
+   for(int i=0;i<a;i++)
+   {
+     int b= s.nextInt();
+     if(b>0)
+         p_count+=1;
+     else if(b<0)
+        n_count+=1;
+     else 
+         zeros_count+=1;
+   }
+   System.out.println("No of positive count is : "+ p_count);
+   System.out.println("No of negative count is : "+ n_count);
+   System.out.println("No of zeros count is : "+ zeros_count);
+   s.close();
+  }
+}
+0:Enter a number:
+7
+10
+25
+0
+-5
+-33
+-66
+0
+No of positive count is : 2
+No of negative count is : 3
+No of zeros count is : 2
+---------------------------------------------------------------
+import java.util.Scanner;
+class pract
+{
+  public static void main(String[] args)
+  {  
+   Scanner s= new Scanner(System.in);
+   System.out.println("Enter a number: ");
+   int num= s.nextInt();
+   System.out.print("The factors of "+num+" is ");
+   for (int i=1; i <num+1; i++)
+   { 
+    if (num%i==0)
+         System.out.print(i+" ");
+   }
+   s.close();
+  }
+}
+0:Enter a number:
+15
+The factors of 15 is 1 3 5 15
+-------------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {  
+    int num=15;
+    String sa=num%3==0 && num%5==0 ? "fizzbuzz" : num%3==0 ? "buzz" : num%5==0 ? "fizz" : "number";  
+    System.out.println(sa);  
+  }
+}
+0:fizzbuzz
+-----------------------------------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {  
+    int num=64,s;
+    s=(int)Math.sqrt(num);
+     if(num==s*s)
+        System.out.println(num+" is perfect square");
+     else
+          System.out.println(num+" is not a perfect square");
+  }
+}
+0:64 is perfect square
+-----------------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {  
+	    int a=40,b=10,c=20;
+	    System.out.println("BEFORE SWAP");
+	    System.out.println(a);
+	    System.out.println(b);
+	    System.out.println(c);
+            a=a*b*c;
+            c=a/(c*b);
+            b=a/(c*b);
+            a=a/(c*b);
+	    System.out.println("AFTER SWAP");
+	    System.out.println(a);
+	    System.out.println(b);
+	    System.out.println(c);
+
+  }
+}
+0:BEFORE SWAP
+40
+10
+20
+AFTER SWAP
+10
+20
+40
+---------------------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {  
+    int a=100;
+    while(a>=1)
+     { 
+         System.out.print(a+" ");
+         a--;
+     }  
+  }
+}
+0:100 99 98 97 96 95 94 93 92 91 90 89 88 87 86 85 84 83 82 81 80 79 78 77 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 58 57 56 55 54 53 52 51 
+50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1
+----------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {  
+    int a=1;
+    while(a<=10)
+     { 
+         System.out.print("Codinghub ");
+         a++;
+     }  
+  }
+}
+0:Codinghub Codinghub Codinghub Codinghub Codinghub Codinghub Codinghub Codinghub Codinghub Codinghub
+----------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {  
+    int a=1,b=1,num=5;
+    while(a<=num)
+     { 
+         b*=a; 
+         a++;
+     }
+      System.out.print(num+" factorial is "+b);  
+  }
+}
+0:5 factorial is 120
+
+class pract
+{
+  public static void main(String[] args)
+  {  
+    int a=1,num=5,num2=num;
+    while(num>=1)
+     { 
+         a*=num; 
+         num--;
+     }
+      System.out.print(num2+" factorial is "+a);  
+  }
+}
+------------------------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {  
+    int a=40,b=20,c=10;
+    System.out.println("BEFORE SWAP");
+    System.out.println(a);
+    System.out.println(b);
+    System.out.println(c);//40 20 10
+   if(a>b)
+    {
+      a=a+b;
+      b=a-b;
+      a=a-b;
+    }
+   if(a>c)
+   {
+      a=a+c;
+      c=a-c;
+      a=a-c;
+    }
+   if(b>c)
+   {
+      b=b+c;
+      c=b-c;
+      b=b-c;
+    }
+     
+     
+   System.out.println("AFTER SWAP");
+    System.out.println(a);
+    System.out.println(b);
+    System.out.println(c);
+  }
+}
+0:    int a=40,b=20,c=10;
+BEFORE SWAP
+40
+20
+10
+AFTER SWAP
+10
+20
+40
+--------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {  
+    int num=10;
+    while(num>=1)
+     {  
+         num--;
+     }
+      System.out.print(num);  
+  }
+}
+ouput: 0
+----------------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {  
+    int a=1,num=15;
+    while(a<=10)
+    { 
+   System.out.println(num+" * "+a+" = "+a*num);
+        a++;
+     }
+     
+  }
+}
+0:
+15 * 1 = 15
+15 * 2 = 30
+15 * 3 = 45
+15 * 4 = 60
+15 * 5 = 75
+15 * 6 = 90
+15 * 7 = 105
+15 * 8 = 120
+15 * 9 = 135
+15 * 10 = 150
+---------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {  
+    int a=1,num=1;
+    while(a<=20)
+    { 
+      num=num*2;
+     a++;
+     }
+     System.out.println(num);
+  }
+}
+0:1048576
+--------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {  
+    int a=1;
+    while(a<=100)
+    { 
+       if(a%3==0 && a%5==0)
+          System.out.print(a+" ");
+     a++;
+     }
+  }
+}
+0:15 30 45 60 75 90
+-----------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {  
+    int a=1,b=0,num=10;
+    while(a<=num)
+     { 
+         b+=a; 
+         a++;
+     }
+      System.out.println("sum of all "+num+" numbers is " +b);  
+  }
+}
+0:sum of all 10 numbers is 55
+----------------------------------------------------------
+class pract
+{
+  public static void main(String[] args)
+  {  
+    int a=1,first=0,second=1,next;
+    System.out.println("Fibonacci series number: ");
+    while(a<=10)
+     { 
+       System.out.print(first+" ");
+       next=first+second;
+       first=second; 
+       second=next;
+        a++;
+     }
+  }
+}
+0:Fibonacci series number:
+0 1 1 2 3 5 8 13 21 34
+---------------------------------------------------------------
+public class factors 
+{
+	public static void main(String hhh[])
+	{
+		int x=2,number=3,countt=0;
+		while(x<=number/2)
+		{
+			if (number%x==0)
+			{
+				countt+=1;
+				
+			}
+			x++;
+		}
+		if(countt>0)
+			System.out.println(number+" is not a prime number ");
+		else
+			System.out.println(number+" is a prime number");
+	}
+}
+0:3 is a prime number
+----------------------------------------------------------------------------
+public class extractdigits {
+
+	public static void main(String[] args)
+	{
+		int num=32415,sum=0;
+		while(num!=0)
+		{   
+			sum=sum+num%10;
+			num=num/10;
+		}
+		System.out.println("sum of digits is "+sum);
+	}
+
+	/*public static void main(String[] args)
+	{
+		int num=72895,sum=0;
+		while(num!=0)
+		{
+			sum=sum*10+num%10;
+			num=num/10;
+		}
+		System.out.println(num+"reverse is "+sum);
+	}*/
+}
+0:sum of digits is 15
+0:72895 reverse is 59827
+-----------------------------------------------------------------------
+public static void main(String[] args) 
+	{
+		int num=12321,num2=num,sum=0;
+		while(num!=0)
+		{
+			sum=sum*10+num%10;
+			num=num/10;
+		}
+			
+		if(num2==sum)
+			System.out.println(num2+" is a palindrome number");
+		else
+			System.out.println(num2+" is not a palindrome number");
+	}
+0:12321 is a palindrome number
+--------------------------------------------------------------
+public class commonfactor 
+{
+	public static void main(String[] args) 
+	{
+	    int n1=33,n2=99,val=0,x=1;
+	    int result=n1<n2 ? n1 : n2;
+	    	while(result/2>=2)
+			{
+				if (n1%result==0 && n2%result==0)
+				{
+					val=result;
+				}
+				result--;
+			}
+		    System.out.println("common least factor of two numbers  is "+val);
+		int res=n1>n2 ? n1 : n2;
+	    	while(x<=res/2)
+			{
+				if (n1%x==0 && n2%x==0)
+				{
+					val=x;
+				}
+				x++;
+			}
+			System.out.println("common highest factor of two numbers  is "+val);
+	}
+}
+0:common least factor of two numbers  is 3
+common highest factor of two numbers  is 33
+-----------------------------------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args) 
+	{
+		int num=370,i=0,num2=num,sum=0,pow=0;
+		while(num2!=0)
+		{   
+			num2=num2/10;
+			i++;
+		}
+		num2=num;
+		while(num2!=0)
+		{   
+			sum=num2%10;
+			pow+=Math.pow(sum,i);
+			num2=num2/10;
+		}
+		if(pow==num)
+			System.out.println(pow+" is  a armstrong number ");
+		else
+			System.out.println(pow+" is not a armstrong number");
+	}
+}
+0:370 is  a armstrong number 
+
+===
+
+public class pract
+{
+	public static void main(String[] args) 
+	{
+		int num=153,n=num,i=0,sum,pow=0;
+		for(int num2=n;n>0;n/=10)
+		{   
+			i++;
+		}
+		n=num;
+		for(int j=1;j<=i;j++)
+		{
+			sum=n%10;
+			pow+=Math.pow(sum,i);
+			n=n/10;
+		}
+		if(pow==num)
+			System.out.println(pow+" is  a armstrong number ");
+		else
+			System.out.println(pow+" is not a armstrong number");
+	}
+}
+-----------------------------------------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args)
+	{
+		int num=17546,c=0;
+		while(num!=0)
+		{   
+			num/=10;
+			c++;
+		}
+		System.out.println("Total no of digits is "+c);
+	}
+}
+0:Total no of digits is 5
+--------------------------------------------------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args)
+	{
+		int num=17546,sum=0,c=0,n=num;
+		while(num!=0)
+		{   
+			sum=num%10;
+			if(sum%2==0)//even then add +2 to it 
+			{
+				sum=sum+2;
+			}
+			else//odd then add +1 to it
+			{
+				sum=sum+1;
+			}
+			System.out.println(sum);
+			num/=10;
+			c++;
+
+		}
+		System.out.println("number of digits of a "+ n+" is "+c);
+	}
+}
+
+0: 
+8
+6
+6
+8
+2
+number of digits of a 17546 is 5
+
+===
+
+public class pract
+{
+	public static void main(String[] args)
+	{
+		int n=17546,sum=0,c=0;
+		for(int num=n;num>0;num/=10)
+		{   
+			sum=num%10;
+			if(sum%2==0)//even then add +2 to it 
+			{
+				sum=sum+2;
+			}
+			else//odd then add +1 to it
+			{
+				sum=sum+1;
+			}
+			System.out.println(sum);
+			c++;
+		}
+		System.out.println("number of digits of a "+n +" is "+c);
+	}
+}
+---------------------------------------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args)
+	{//problem check zeros,count 0 ,mult 0,add 17 
+		int num=120000,c=0,c1=0,rev=0,rev2;
+		while(num!=0)
+		{
+			rev=rev*10+num%10;
+			num=num/10;
+			c++;
+		}
+		rev2=rev;
+		while(rev!=0)
+		{
+			rev/=10;
+			c1++;
+		}
+		c=c-c1;//int res=c>c1? c-c1 : c1-c;
+		rev2=rev2*(int)Math.pow(10,c)+17;
+		System.out.println(rev2);
+	}
+}
+0:210017
+----------------------------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args)
+	{
+		int num=1234,sum=0,num2,c=0,f=1,l=1;
+		System.out.println("Number is "+num);
+		while(num>0)
+		{ 
+		 sum=sum*10+num%10;
+		 num/=10;
+	    }
+		while(sum>0)
+		{
+			c++;
+			num2=sum%10;
+			 if (c==1 || c==2)
+				 f=f*num2;
+			 else
+				 l=l*num2;
+			 sum/=10;
+		}
+		System.out.println("the first two digit multi "+f);
+		System.out.println("the remaining digits multi "+l);
+		System.out.println("Sum is :"+(f+l));
+   }
+}
+
+0:Number is 1234
+the first two digit multi 2
+the remaining digits multi 12
+Sum is :14
+
+====
+
+public class pract
+{
+	public static void main(String[] args)
+	{
+		int num=1234,sum=0,num2,c=0,c1=0,f=1,l=1;
+		System.out.println("Number is "+num);
+		while(num>0)
+		{ 
+		 sum=sum*10+num%10;
+		 num/=10;
+		 c++;
+	    }
+		while(sum>0)
+		{
+			c1++;
+			num2=sum%10;
+			 if (c1==1 || c1==c)
+				 f=f*num2;
+			 else
+				 l=l*num2;
+			 sum/=10;
+		}
+		System.out.println("the first and last digit multi "+f);
+		System.out.println("the remaining digits multi "+l);
+		System.out.println("Sum is :"+(f+l));
+   }
+}
+0:Number is 1234
+the first and last digit multi 4
+the remaining digits multi 6
+Sum is :10
+-------------------------------------------------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args)
+	{
+		//chapter 3 o)question s)question
+		int num=12391,sum=0,num2=0;
+		while(num!=0)
+		{
+			sum=sum*10+num%10;
+			num/=10;
+		}//19321
+		while(sum!=0)
+		{
+			num=sum%10;
+			if(num==9)
+				num=0;
+			else
+			{
+			    num++;//num=num;
+			}
+			num2=num2*10+num;
+			sum/=10;
+		}
+		System.out.println(num2);
+	}
+}
+0:23402
+//num=479//0:580
+---------------------------------------------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args)
+	{
+		int num=12345,num2,c=0,f=1,l=1,m=1;
+		System.out.println("Number is :"+num);
+		while(num>0)
+		{
+			c++;
+			num2=num%10;
+			 if (c==1 || c==5)
+				 f=f*num2;
+			 else if(c==2 || c==3)
+				 l=l*num2;
+			 else
+				 m=m*num2;
+			 num/=10;
+		}
+		System.out.println("the first and last digits multi :"+f);
+		System.out.println("the remaining digits multi :"+l);
+		System.out.println("the second digit multi :"+m);
+		System.out.println("Result is :"+(f+l)*m);
+   }
+}
+0:Number is :12345
+the first and last digits multi :5
+the remaining digits multi :12
+the second digit multi :2
+Result is :34
+----------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args)
+	{
+		int num=236978,num2,great=0;
+		System.out.println("Number is :"+num);
+		while(num>0)
+		{
+			num2=num%10;
+			if(great>num2)                  //if(num2>great) 
+				great=great;            //great=num2;
+			else
+				great=num2;
+			num/=10;
+		}
+		System.out.println("Greatest digit in given number is :"+great);
+   }
+}
+0:Number is :236978
+Greatest digit in given number is :9
+//result= great>num2 ? great=great : great=num2;
+
+====
+
+public class pract
+{
+	public static void main(String[] args)
+	{
+		int n=236978,num=n,num2,great=0;
+		System.out.println("Number is :"+num);
+		for(;num>0;num/=10)
+		{
+			num2=num%10;
+			if(num2>great) 
+			     great=num2;
+		}
+		System.out.println("Greatest digit in given number is :"+great);
+   }
+}
+-------------------------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args)
+	{
+		int i=1;
+		for(;i<=10;i++)
+			System.out.println(i);
+   }
+}
+0:1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+-------------------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args)
+	{
+		int num=28592,ten,fifty,hund;
+		System.out.println("Amount Rs."+num);
+		hund=num/100;
+		num=num-hund*100;
+		fifty=num/50;
+		num=num-fifty*50;
+		ten=num/10;
+		num=num-ten*10;
+		System.out.println("Hundereds : "+hund+"\nFiftys : "+fifty+"\nTens : "+ten);
+		
+   }
+}
+0:Amount Rs.28592
+Hundereds : 285
+Fiftys : 1
+Tens : 4
+----------------------------------------------------------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args)
+	{
+		int num=167,x=2,c=0,rev=0,c1=0;//num=79;
+		for(;x<=num/2;x++)
+		{
+			if(num%x==0)
+				c++;
+		}
+		if(c==0)
+		{
+			while(num<0)
+			{
+				rev=rev*10+num%10;
+				num/=10;
+			}
+		}
+		while(x<=rev/2)
+		{
+			if(rev%x==0)
+				c1++;
+			x++;
+		}
+		if(c1==0 && c==0)//if(c1==c)
+			System.out.println("Twisted Prime Number");
+		else
+			System.out.println("Not a Twisted Prime Number");
+	}
+}
+0:Twisted Prime Number
+
+==
+
+public class pract
+{
+	public static void main(String[] args)
+	{
+		int num=167,x=2,c=0,rev=0,c1=0;//num=79;
+		for(;x<=num/2;x++)
+		{
+			if(num%x==0)
+				c++;
+		}
+		if(c==0)
+		{
+			while(num<0)
+			{
+				rev=rev*10+num%10;
+				num/=10;
+			}
+			while(x<=rev/2)
+			{
+				if(rev%x==0)
+					c1++;
+				x++;
+			}
+		    if(c1==0 && c==0)
+			 System.out.println("Twisted Prime Number");
+		    else
+		    	System.out.println("Not a Twisted Prime Number");    
+		}
+		else
+			System.out.println("Not a Twisted Prime Number");
+	}
+}
+--------------------------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args)
+	{
+		int num1=19,num2=17,x,c1=0,c2=0,res;
+		for(x=2;x<=num1/2;x++)
+		{
+			if(num1%x==0)
+				c1++;
+		}
+		for(x=2;x<=num2/2;x++)
+		{
+			if(num2%x==0)
+				c2++;
+		}
+		res=num1>num2? num1-num2 : num2-num1;
+		if(c1==0 && c2==0)
+		{
+			if(res==2)
+				System.out.println("Twin Prime Numbers");
+			else
+				System.out.println("Not a Twin Prime Numbers");
+		}
+		else
+			System.out.println("Not a Twin Prime Numbers");
+	}
+}
+0:Twin Prime Numbers
+
+==
+
+public class pract
+{
+	public static void main(String[] args)
+	{
+			int num1=17,num2=19,x,c1=0,c2=0,res;
+			res=num1>num2? num1-num2 : num2-num1;
+			if(res==2)
+			{
+				for(x=2;x<=num1/2;x++)
+				{
+					if(num1%x==0)
+						c1++;
+				}
+				for(x=2;x<=num2/2;x++)
+				{
+					if(num2%x==0)
+						c2++;
+				}
+				if(c1==0 && c2==0)
+					System.out.println("Twin Prime Numbers");
+                                    else
+					System.out.println("Not a Twin prime numbers");
+			}
+			else
+				System.out.println("Not a Twin Prime Numbers");
+	}
+}
+0:Twin Prime Numbers
+---------------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args)
+	{
+		int num=2,x,ct;
+		System.out.println("Prime numbers :");
+		for(;num<=30;num++)
+		{
+			x=2;ct=0;
+			while(x<=num/2)
+			{
+				if (num%x==0)
+                                  {
+					ct++;
+                                        break;
+                                  }
+				x++;
+			}
+			if(ct==0)
+				System.out.println(num);
+			
+		}		
+	}
+}
+0:Prime numbers :
+2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 
+-------------------------------------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args)
+	{
+		int num=2,x,ct,c=0;   
+		System.out.println("Prime numbers :");
+		for(;num<=31;num++)
+		{
+			x=2;ct=0;
+			while(x<=num/2)
+			{
+				if (num%x==0)
+                {
+					ct++;
+                    break;
+                 }
+				x++;
+			}
+			if(ct==0)
+			{
+				c++;
+				if(c%2!=0)
+				    System.out.println(num);
+			}
+		}
+	}
+}
+0:Prime numbers :
+2 5 11 17 23 31    
+----------------------------------------------------------------------------------------------------------
+int x,num,rev;        //1 to 100 palindromes
+for(x=1;x<=100;x++)
+{
+	num=x;
+	rev=0;
+	while(num!=0)
+	{
+		rev=rev*10+num%10;
+		num=num/10;
+	}
+		
+	if(x==rev)
+		System.out.println(x);
+}
+0:1 2 3 4 5 6 7 8 9 11 22 33 44 55 66 77 88 99 
+------------------------------------------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args)
+	{
+	  char num=3;
+	  switch(num)
+	  {
+	  case 1:
+		  System.out.println("case 1");
+		  break;
+	  case 's':
+		  System.out.println("case 2");
+		  break;
+	  case 3:
+		  System.out.println("case 3");
+		  break;
+	  default:
+		   System.out.println("not found");
+	  }
+	}
+}
+--------------------------------------------------------------------------------------
+public class pract                  // higesht common factor
+{
+	public static void main(String[] args)
+	{
+		 int num1=100,num2=1000,hcf=0;           
+		 int hcfr=num1<num2 ? num1 : num2 ; 
+		 while(hcfr>=1)                           
+		 {
+		      if(num1%hcfr==0 && num2%hcfr==0)
+		      {   hcf=hcfr;
+		           break;
+		      }
+		      hcfr--;
+		 }
+		     System.out.println(hcf);  
+	}
+}
+0:100
+-------------------------------------------------------------------------------------------------
+public class pract                        //armstrong from 1 to 10000
+{
+	public static void main(String[] args)
+	{
+		int x,n,c,pow,digit;
+		for(x=1;x<=10000;x++)
+		{
+		    n=x;
+		    c=0;
+		    digit=0;
+		    pow=0;
+		    for(;n>0;n/=10)
+		    {   
+			    c++;
+		    }
+		    n=x;
+		    while(n>0)
+		    {
+			    digit=n%10;
+			    pow+=Math.pow(digit,c);
+			    n=n/10;
+		    }
+		    if(pow==x)
+			     System.out.println(pow);
+		}
+	}
+}
+0:1 2 3 4 5 6 7 8 9 153 370 371 407 1634 8208 9474 
+---------------------------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args)
+	{
+		int num=1768,rev=0;
+		System.out.println("Number is : "+num);
+		while(num>0)
+		{
+			rev=rev*10+num%10;
+			num/=10;
+		}	
+		while(rev>0)
+		{
+			num=rev%10;
+			System.out.print(num+" factors are : ");
+			for(int x=1;x<=num;x++)
+			{
+				if(num%x==0)
+				    System.out.print(x+" ");
+			}
+			System.out.println();
+			rev/=10;
+		}	
+	}
+}
+0:Number is : 1768
+1 factors are : 1 
+7 factors are : 1 7 
+6 factors are : 1 2 3 6 
+8 factors are : 1 2 4 8 
+--------------------------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args)
+	{
+		int c=0;
+		for(int y=1855;y<=2024;y++)
+		{
+			if(y%4==0 && y%100!=0 || y%400==0)
+			{
+				System.out.print(y+" ");
+				c++;
+			}
+		}
+		System.out.println();
+		System.out.println("Total leap years :"+c);
+		
+	}
+}
+0:1856 1860 1864 1868 1872 1876 1880 1884 1888 1892 1896 1904 1908 1912 1916 1920 1924 1928 1932 1936 1940 1944 
+1948 1952 1956 1960 1964 1968 1972 1976 1980 1984 1988 1992 1996 2000 2004 2008 2012 2016 2020 2024 
+Total leap years :42
+----------------------------------------------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args)
+	{
+		int num=1230,fact,rev=0,c=0;
+		System.out.println("Number is :"+num);
+		while(num>0)
+		{
+			rev=rev*10+num%10;
+			num/=10;
+			c++;
+		}
+		while(c>0)
+		{
+			num=rev%10;
+			System.out.print(num);
+			fact=1;
+			for(;num>0;num--)
+				fact*=num;
+			System.out.println(" Factorial is :"+fact);
+			rev/=10;
+			c--;
+		}
+	}
+}
+0:Number is :1230
+1 Factorial is :1
+2 Factorial is :2
+3 Factorial is :6
+0 Factorial is :1
+
+----------------------------------------------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args)
+	{
+		int num=2343,c1=0,rem,c,x;
+		System.out.println("Number is :"+num);
+		while(num>0)
+		{
+			rem=num%10;
+			c=0;
+			for(x=2;x<=rem/2;x++)  ////for(x=rem/2;x>=2;x--)
+			{
+				if(rem%x==0)
+				{
+					c++;
+					break;
+				}
+			}
+			if(c==0)
+				c1++;
+			
+			num/=10;
+		}
+		System.out.println("No of prime digits are :"+c1);
+	}
+}
+0:Number is :2343
+No of prime digits are :3
+------------------------------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args)
+	{
+		int num,sum,fact,x,c=0;
+		for(num=1;num<=200;num++)
+		{
+			x=1;sum=0;fact=1;   
+			  while(x<=num/2)
+			  {
+			    if(num%x==0)
+			    { 
+			     sum=sum+x;
+			     fact=fact*x;
+			    }
+			   x++;
+			  }
+			   if(sum==fact)
+			   {
+				   c++;	
+			        System.out.print(num+" "); 
+			   }
+		}
+		System.out.println();
+		System.out.println("No of Shilong numbers are :"+c);
+	}
+}
+0:2 3 5 6 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 101 103 
+107 109 113 127 131 137 139 149 151 157 163 167 173 179 181 191 193 197 199 
+No of Shilong numbers are :47
+------------------------------------------------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args)
+	{
+		int num,sum,fact,c=0,rem,x=0;
+		for(num=1;num<=1000;num++)
+		{
+			x=num;sum=0;fact=1;   
+			  while(x>0)
+			  {
+			    rem=x%10;
+			    sum=sum+rem;
+			    fact=fact*rem;
+			    x/=10;
+			  }
+			   if(sum==fact)
+			   {
+				   c++;
+				   System.out.println(num+"");
+			   }
+		}
+		System.out.println("No:of Magic numbers are :"+c);
+	}
+}
+0:1 2 3 4 5 6 7 8 9 22 123 132 213 231 312 321 
+No:of Magic numbers are :16
+--------------------------------------------------------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args)
+	{
+		int num=2,x,ct,n,rev;
+		System.out.println("Prime palindrome numbers :");
+		for(;num<=200;num++)
+		{
+			x=2;ct=0;
+			while(x<=num/2)
+			{
+				if (num%x==0)
+                  {
+					ct++;
+                    break;
+                  }
+				x++;
+			}
+			if(ct==0)
+			{
+				n=num;
+				rev=0;
+				while(n>0)
+				{
+					rev=rev*10+n%10;
+					n/=10;
+				}	
+				if(num==rev)
+					System.out.println(num);
+			}
+			
+		}		
+	}
+}
+0:Prime palindrome numbers :
+2 3 5 7 11 101 131 151 181 191 
+
+//you can write like this but it will check all the numbers palindrome or not (we want to check only prime numbers are palindrome) 
+				n=num;
+				rev=0;
+				while(n>0)
+				{
+					rev=rev*10+n%10;
+					n/=10;
+				}	
+				if(num==rev && ct==0)
+					System.out.println(num);
+-----------------------------------------------------------------------------------------
+public class pract
+{
+	public static void main(String[] args)
+	{
+		String Branch="ECE";
+		int year=3;
+		switch(Branch)
+		{
+			case "CSE": System.out.println("CSE");
+			      switch(year)
+			      {
+			         case 1:System.out.println("I year");
+			         break;
+			         case 2:System.out.println("II year");
+			         break;
+			         case 3:System.out.println("III year");
+			         break;
+			         case 4:System.out.println("IV year");
+			         break;
+			      }
+			           
+			break;
+			
+			case "IT": System.out.println("IT");
+			       switch(year)
+		           {
+		            case 1: System.out.println("I year");
+		            break;
+		            case 2: System.out.println("II year");
+		            break;
+		            case 3: System.out.println("III year");
+		            break;
+		            case 4: System.out.println("IV year");
+		             break;
+		      }
+			break;
+			
+			case "ECE": System.out.println("ECE");
+		       switch(year)
+	           {
+	            case 1: System.out.println("I year");
+	            break;
+	            case 2: System.out.println("II year");
+	            break;
+	            case 3: System.out.println("III year");
+	            break;
+	            case 4: System.out.println("IV year");
+	            break;
+	           }
+	           
+			break;
+			
+			default: System.out.println("ENTER YOUR BRANCH");
+			
+			
+		}
+	}
+}
+------------------------------------------------------------------------------
+===============================================
+TEST 
+===============================================
+class Bsaikiran
+{
+  public static void main(String[] args)
+  {  
+
+/*
+    char ch='3';                         // 1st java  code
+    if(ch>='A' && ch<='Z')
+       System.out.println("Captial");
+    else if(ch>='a' && ch<='a')
+       System.out.println("Small");
+     else if(ch>='0' && ch<='9')
+       System.out.println("Number");            //Number
+     else
+       System.out.println("Symbol");
+
+
+
+   int num1=100,num2=70,x=1,hcf=0;           //2nd java code higesht common factor 
+   int hcfr=num1>num2 ? num1 : num2 ;    //int hcfr=num1<num2 ? num1 : num2 ;
+    for(;x<=hcfr/2;x++)           //for(;x<=hcfr;x++)                
+     {
+      if(num1%x==0 && num2%x==0)
+           hcf=x;
+     }
+     System.out.println(hcf);            //10
+    
+
+
+    int minnum=796358,digit,mindigit=9;   //mindigit=minnum%10;  
+     while(minnum>0)
+    {
+       digit=minnum%10;              //3rd java code  samllest digit in number
+       if(digit<mindigit)
+          mindigit=digit;
+     minnum/=10;
+    }
+    System.out.println(mindigit);          //3       
+     
+
+   int num=74530,rev=0,digit=0,c=0;  // 4th java code
+   String n;  
+   while(num>0)
+   {
+     rev=rev*10+num%10;
+     num/=10;
+     c++;
+   }   
+   while(c>0)
+   {
+     digit=rev%10;
+      if(digit==9)
+          n="VIIII";
+      else if(digit==8)
+          n="VIII";
+       else if(digit==7)
+          n="VII";
+      else if(digit==6)
+          n="VI";
+      else if(digit==5)
+           n="V";
+       else if(digit==4)
+          n="IV";
+       else if(digit==3)
+         n="III";
+       else if(digit==2)
+         n="II";
+       else if(digit==1)
+           n="I";
+       else
+          n="0";
+       System.out.print(n+" ");     //VII IV V III 0
+     rev/=10;
+     c--;
+    }  
+
+
+    
+    int num=121,num2=num,rev=0;         // 5th a) java code
+    while(num>0)
+    {
+     rev=rev*10+num%10;
+     num/=10;
+   }
+   if(num2==rev)
+       System.out.println("Palindrome");
+    else 
+    System.out.println("Not a palindrome");        // palindrome       
+
+      
+    int pnum=13,x=2,count=0;           //5th b) java code 
+    for(;x<=pnum/2;)
+    {
+     if(pnum%x==0)
+      {
+       count++;
+       break;
+       }
+     x++;   
+    }
+    if(count==0)
+            System.out.println("Prime number"); 
+     else
+            System.out.println("Not a Prime number");     //Prime number  
+
+
+
+   int x=1,f=0,s=1,n;             //5th c) java code  fibonacci series
+   for(;x<=10;x++)
+   {  
+      System.out.print(f+" "); 
+      n=f+s;
+      s=f;
+      f=n;                              //0 1 1 2 3 5 8 13 21 34           
+   }                                                                                                  
+   
+                                             
+   char x=0;                                //6th java code Ascii
+   while(x<=256)
+  { 
+     System.out.println((int)x+" = "+x); 
+   x++;  
+  }         
+                    //    62 = >
+                    //    63 = ?
+                    //    64 = @
+                    //    65 = A                              
+
+
+
+  int num=6,x=1,sum=0,fact=1;    // 7th java code 
+  while(x<=num/2)
+  {
+    if(num%x==0)
+    { 
+     sum=sum+x;
+     fact=fact*x;
+    }
+   x++;
+  }
+   if(sum==fact)
+        System.out.println("Shilong"); 
+  else
+        System.out.println("Not a Shilong");     //Shilong      
+                                                                      */
+
+  }
+}
+-------------------------------------------------------------------------------------------------
+===============================================
+TEST 
+===============================================
+class Bsaikiran
+{
+  public static void main(String[] args)
+  {  
+  /*
+    int num=9,sq,sum=0;
+    sq=(int)Math.pow(num,2);
+    while(sq>0)
+   {
+    sum=sum+sq%10;
+    sq/=10;
+   }
+   if(num==sum)
+      System.out.println("Evil number");
+  else
+      System.out.println("Not a Evil number");    // Evil number  
+
+------  
+
+   int num=132,sum=0,prod=1;
+   while(num>0)
+   {
+    sum=sum+num%10;
+    prod=prod*num%10;
+    num/=10;
+   }
+   if(prod==sum)
+      System.out.println("Power number");
+  else
+      System.out.println("Not a Power number");          //Power number   
+
+
+-----------------------------  
+      int num=76,copy=num,sq,rev=0,rev2=0,x=1,count=0;
+    sq=(int)Math.pow(num,2);
+   while(copy>0)
+  {
+   count++;
+   copy/=10;
+  }
+    while(x<=count)
+   {
+    rev=rev*10+sq%10;
+    sq/=10;
+   x++;
+   }
+   while(rev>0)
+   {
+    rev2=rev2*10+rev%10;
+    rev/=10;
+   } 
+   if(num==rev2)
+      System.out.println("Automatic  number");
+  else
+      System.out.println("Not a Automatic number");    //Automatic  number 
+
+
+           (or)
+ int num=76,sq,rev=0,rev2=0,x=1,count=0;
+ sq=(int)Math.pow(num,2);
+while(num>0)
+{
+rev=rev*10+num%10;
+num/=10;
+count++;
+}
+while(x<=count)
+{
+rev2=rev2*10+sq%10;
+sq/=10;
+x++;
+}
+if(rev==rev2)
+    System.out.println("Automatic  number");
+else
+      System.out.println("Not a Automatic number");    //Automatic  number
+
+                (or)
+
+int num=25,copy=num,sq,rev=0,count=0;
+sq=(int)Math.pow(num,2);
+while(copy>0)
+{
+   copy/=10;
+   count++;
+}
+rev=sq%(int)Math.pow(10,count);
+if(rev==num)
+	System.out.println(num+" Automatic  number");
+else
+      System.out.println(num+" Not a Automatic number");  //Automatic  number
+
+-----------------
+
+int num=2025,count=0,copy=num,rev=0,x,f=0,l=0,sum=0,sq=0;
+		  
+		  while(copy>0)
+		  {
+		    rev=rev*10+copy%10;
+		    copy/=10;
+		    count++;
+		  } 
+		  if(count%2==0)
+		  {
+			  x=1;
+			  while(x<=count/2)
+			   {
+			    f=f*10+rev%10;
+			    rev/=10;
+			   x++;
+			   }  
+			   x=1;
+			   while(x<=count/2)
+			   {
+			    l=l*10+rev%10;
+			    rev/=10;
+			   x++;
+			   }
+			   sum=f+l;
+			   sq=(int)Math.pow(sum,2);
+			   if(num==sq)
+			      System.out.println("Technology  number");
+			  else
+			      System.out.println("Not a Technology number");
+		  }
+		  else
+		      System.out.println("Not a Technology number");       //Technology  number 81,2025,3025,9801
+
+
+                                  (or)
+
+int num=81,count=0,copy=num,f=0,l=0,sum=0,sq=0;  
+		  while(copy>0)
+		  {
+		    copy/=10;
+		    count++;
+		  } 
+		  if(count%2==0)
+		  {
+			  f=num%(int)Math.pow(10,count/2);
+			  l=num/(int)Math.pow(10,count/2);
+			   sum=f+l;
+			   sq=(int)Math.pow(sum,2);
+			   if(num==sq)
+			      System.out.println("Technology  number");
+			  else
+			      System.out.println("Not a Technology number");
+		  }
+		  else
+		      System.out.println("Not a Technology number");          //Technology  number
+
+--------------
+
+  int num=78,last;
+  last=num%10;
+  if(num%last==0 || last==7)
+      System.out.println("The Number is a Busy Number");
+  else
+      System.out.println("Number is a not Busy Number");   //Number is a not Busy Number
+ ------------- 
+  
+   int pnum=13,x=2,count=0;     
+    for(;x<=pnum/2;)
+    {
+     if(pnum%x==0)
+      {
+       count++;
+       break;
+       }
+     x++;   
+    }
+    if(count==0)
+            System.out.println("Prime number"); 
+     else
+            System.out.println("Not a Prime number");    //Prime number
+
+
+int pnum=111,x,count;   
+ for(;pnum<=511;pnum++)         //prime numbers from 111 to 511
+{  
+   x=2;
+    count=0;   
+    for(;x<=pnum/2;)
+    {
+     if(pnum%x==0)
+      {
+       count++;
+       break;
+       }
+     x++;   
+    }
+    if(count==0)
+            System.out.print(pnum+" ");
+}  //113 127 131 137 139 149 151 157 163 167 173 179 181 191 193 197 199 211 223 227 229 233 239
+ 241 251 257 263 269 271 277 281 283 293 307 311 313 317 331 337 347 349 353 359 367 373 379 383 
+389 397 401 409 419 421 431 433 439 443 449 457 461 463 467 479 487 491 499 503 509
+
+
+
+  int y=1900;
+  if(y%4==0 && y%100!=0 || y%400==0)
+         System.out.print("Leap Year");
+ else
+            System.out.print("Not a Leap Year");//Not a Leap Year
+
+
+
+  int x=1,f=0,s=1,n;        //fibonacci series
+   for(;x<=10;x++)
+   {  
+      System.out.print(f+" "); 
+      n=f+s;
+      s=f;
+      f=n;             //0 1 1 2 3 5 8 13 21 34           
+   }  
+
+
+*/
+
+  }
+}
+----------------------------------------------------------------
+Scanner scan= new Scanner(System.in);
+	System.out.println(" enter string : ");
+	 String s = scan.nextLine();
+	 System.out.println("String s :" + s);
+	 
+	 System.out.println(" enter string : ");
+	 String s1 = scan.next();
+	 System.out.println("String s1 :" + s1);
+	 
+	 System.out.println(" enter string : ");
+	 String s2 = scan.nextLine();
+	 System.out.println("String  s2 :" + s2);
+0:
+ enter string : 
+sai kiran 
+String s :sai kiran 
+ enter string : 
+kiran sai sand
+String s1 :kiran
+ enter string : 
+String  s2 : sai sand
+--------------------------------------------------------------------------------------------------------------------------
+public static void main(String[] args) 
+	{
+		Scanner s= new Scanner(System.in);
+		System.out.println("Enter a number");
+		char ch='Y';
+		while(ch=='Y' || ch=='y')
+		{
+		int num=s.nextInt();
+		if(num%2==0)
+			System.out.println(num+" is Even Number");
+		else
+			System.out.println(num+" is Odd Number");
+		System.out.println("Do you want to continue\nPress Y  Otherwise N");
+        ch=s.next().charAt(0);
+        if(ch=='y' || ch=='Y')
+            System.out.println("Enter a number");
+        else
+        	System.out.println("Thank you");
+		}
+0:
+Enter a number
+5
+5 is Odd Number
+Do you want to continue
+Press Y  Otherwise N
+y
+Enter a number
+2
+2 is Even Number
+Do you want to continue
+Press Y  Otherwise N
+n
+Thank you
+--------------------------------------------------------------------------------------------------------
+public static void main(String[] args) 
+	{
+		Scanner s= new Scanner(System.in);
+		System.out.println("Welcome To S@IKi Mall");
+		System.out.println("Choose a Category\n1.Men 2.Women");
+		char ch='Y';
+	   int total,gtotal=0;
+	   int shirts=20,sprice=499,shirtq=0;
+ 	   int pants=10,pprice=799,pantq=0;
+ 	   int sarees=50,srprice=4999,sareeq=0;
+	   int skirts=30,skprice=3999,skirtq=0;
+		while(ch=='Y' || ch=='y')
+		{
+		   int c=s.nextInt();
+            if(c==1)
+            {
+               System.out.println("Choose The Product\n1.Shirt 2.Pant");
+               int m=s.nextInt();
+               shirts-=shirtq;
+               pants-=pantq;
+               if(m==1)
+               {
+            	   System.out.println("Only left "+shirts+" Shirts \nAvailable in Black,Blue,White \nPrice Each Rs."+sprice+" only");
+            	   System.out.println("Enter Quantity");
+            	   shirtq=s.nextInt();
+            	   if(shirtq<=shirts) 
+            	   {
+            		   total=shirtq*sprice;
+            		   gtotal+=total;
+                	   System.out.println("Price: "+total);
+            	   }
+            	   else
+            	       System.out.println("Sorry Quantity are Not Available");
+               }
+               else if(m==2)
+               {
+            	   System.out.println("Only left "+pants+" Pants \nAvailable in Black,Blue \nPrice Each Rs."+pprice+" only");
+            	   System.out.println("Enter Quantity");
+            	   pantq=s.nextInt();
+            	   if(pantq<=pants) 
+            	   {
+            		   total=pantq*pprice;
+            		   gtotal+=total;
+                	   System.out.println("Price: "+total);
+            	   }
+            	   else
+            	       System.out.println("Sorry Quantity are Not Available");
+                 }
+               else
+            	   System.out.println("Choose Product Correctlty");
+             }
+            else if(c==2)
+            {
+        	    System.out.println("Women");
+        	    System.out.println("Choose The Product\n1.Saree 2.Skirt");
+                int w=s.nextInt();
+          	    sarees-=sareeq;
+          	    skirts-=skirtq;
+                if(w==1)
+                {
+             	   System.out.println("Only left "+sarees+" Saree \nAvailable in Black,Blue,White \nPrice Each Rs."+srprice+" only");
+             	   System.out.println("Enter Quantity");
+             	   sareeq=s.nextInt();
+             	   if(sareeq<=sarees) 
+             	   {
+             		   total=sareeq*srprice;
+            		   gtotal+=total;
+                 	   System.out.println("Price: "+total);
+             	   }
+             	   else
+             	       System.out.println("Sorry Quantity are Not Available");
+                }
+                else if(w==2)
+                {
+             	   System.out.println("Only left "+skirts+" Skirts \nAvailable in Black,Blue \nPrice Each Rs."+skprice+" only");
+             	   System.out.println("Enter Quantity");
+             	   skirtq=s.nextInt();
+             	   if(skirtq<=skirts) 
+             	   {
+             		   total=skirtq*skprice;
+            		   gtotal+=total;
+                 	   System.out.println("Price: "+total);
+             	   }
+             	   else
+             	       System.out.println("Sorry Quantity are Not Available");
+                }
+                else
+             	   System.out.println("Choose Product Correctlty");
+            }
+            else
+         	   System.out.println("Choose Category Correctlty");
+    	  System.out.println("Do you want to continue Shopping\nPress Y  Otherwise N");
+          ch=s.next().charAt(0);
+          if(ch=='y' || ch=='Y')
+              System.out.println("Choose a Category\n1.Men 2.Women");
+          else
+          {
+        	System.out.println("Total Price: "+gtotal);
+          	System.out.println("Thank you Visit Again");
+          }
+		}	
+	}
+
+0:
+Welcome To S@IKi Mall
+Choose a Category
+1.Men 2.Women
+1
+Choose The Product
+1.Shirt 2.Pant
+1
+Only left 20 Shirts 
+Available in Black,Blue,White 
+Price Each Rs.499 only
+Enter Quantity
+5
+Price: 2495
+Do you want to continue Shopping
+Press Y  Otherwise N
+y
+Choose a Category
+1.Men 2.Women
+3
+Choose Category Correctlty
+Do you want to continue Shopping
+Press Y  Otherwise N
+n
+Total Price: 2495
+Thank you Visit Again
+---------------------------------------------------------------------------------------------------------------
+
+
+

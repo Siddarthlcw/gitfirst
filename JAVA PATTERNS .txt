@@ -1,0 +1,1277 @@
+JAVA PATTERNS 
+================================================================================================================================================== 
+STAR PATTERNS
+==================================================================================================================================================
+    
+for(int i=1;i<=3;i++)                                             //rectangle pattern
+		{
+			for(int j=1;j<=6;j++)
+			    System.out.print("* ");
+			System.out.println();
+		}
+0:
+* * * * * * 
+* * * * * * 
+* * * * * *
+------------------------------------------------------------
+int star=3;
+for(int i=1;i<=star;i++)                                             //square pattern
+		{
+			for(int j=1;j<=star;j++)
+			    System.out.print("* ");
+			System.out.println();
+		}
+0:
+* * *  
+* * *  
+* * *  
+------------------------------------------------------------------------
+int star=4;
+		for(int i=1;i<=star+1;i++)                                             //rombus pattern
+		{
+			for(int j=i;j>=2;j--)
+				System.out.print(" ");
+			for(int j=1;j<=star;j++)
+				System.out.print("* ");
+			System.out.println();
+		}
+0:
+* * * * 
+ * * * * 
+  * * * * 
+   * * * * 
+    * * * * 
+------------------------------------------------------------------------                            
+int star=10;                                           //right triangle 
+		for (int i = 1; i <=star ; i++)            
+		{ 
+			
+		      for (int j = 1; j <=i; j++) 
+		          System.out.print("* ");
+		      System.out.println();
+		 }
+0:
+* 
+* * 
+* * *
+* * * *
+* * * * *
+-------------------------------------------------------------------
+int star=10;                     // revesre  right triangle 
+for (int i = 1; i <=star ; i++)            
+{ 
+	for (int l = star-1; l >= i; l--) 
+          System.out.print("  ");
+      for (int j = 1; j <=i; j++) 
+          System.out.print("* ");
+      System.out.println();
+ }
+0:
+        * 
+      * * 
+    * * * 
+  * * * * 
+* * * * * 
+
+for (int i = star; i >=1 ; i--)            
+		{ 
+		      for (int j = 1; j <=star; j++) 
+		      {
+		    	  if(j<i)
+			          System.out.print("  ");
+		    	  else
+			          System.out.print("* ");
+
+		      }
+		      System.out.println();
+		 }
+---------------------------------------------------------
+  int star=10;                               //invert right triangle
+		for (int i = star; i >=1 ; i--)            
+		{ 
+			
+		      for (int j = 1; j <=i; j++) 
+		          System.out.print("* ");
+		      System.out.println();
+		 }
+0:
+* * * * * 
+* * * * 
+* * * 
+* * 
+*
+------------------------------------------------------------------------
+int star=10;                // revesre invert right triangle 
+for (int i = star; i >=1 ; i--)            
+{ 
+	for (int l = star-1; l >= i; l--) 
+          System.out.print("  ");
+      for (int j = i; j >= 1; j--) 
+          System.out.print("* ");
+      System.out.println();
+ }
+0:
+* * * * * 
+  * * * * 
+    * * * 
+      * * 
+        * 
+
+for (int i = 1; i <=star ; i++)            
+		{ 
+		      for (int j = 1; j <=star; j++) 
+		      {
+		    	  if(j<i)
+			          System.out.print("  ");
+		    	  else
+			          System.out.print("* ");
+
+		      }
+		      System.out.println();
+		 }
+----------------------------------------------------------------
+int star=6;
+		for (int i = 1; i <=star ; i++)      //Pyramid Pattern
+		{
+			for (int l = star-1; l >= i; l--) 
+		          System.out.print(" ");
+		      for (int j = 1; j <= i; j++) 
+		          System.out.print("* ");
+		      System.out.println();
+		 }
+
+0:
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 
+--------------------------------------------------------------
+int star=5;
+		for (int i = star; i >=1 ; i--)                 //Inverted Pyramid Pattern:
+		{ 
+			for (int l = star-1; l >= i; l--) 
+		          System.out.print(" ");
+		      for (int j = i; j >= 1; j--) 
+		          System.out.print("* ");
+		      System.out.println();
+		 }
+0:
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    * 
+----------------------------------------------------------
+int star=6;                                               //Daimond 
+		for (int i = 1; i <=star ; i++)      
+		{
+			for (int l = star-1; l >= i; l--) 
+		          System.out.print(" ");
+		      for (int j = 1; j <= i; j++) 
+		          System.out.print("* ");
+		      System.out.println();
+		 }
+		for (int i = star-1; i >=1 ; i--)             
+		{ 
+			for (int l = star-1; l >= i; l--) 
+		          System.out.print(" ");
+		      for (int j = i; j >= 1; j--) 
+		          System.out.print("* ");
+		      System.out.println();
+		 }
+//Diamond Pattern
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    * 
+----------------------------------------------------------------------------
+int star=6; 
+		for (int i = star; i >=1 ; i--)             
+		{ 
+			for (int l = star-1; l >= i; l--) 
+		          System.out.print(" ");
+		      for (int j = i; j >= 1; j--) 
+		          System.out.print("* ");
+		      System.out.println();
+		 }//Daimond 
+		for (int i = 1; i <=star ; i++)      
+		{
+			for (int l = star-1; l >= i; l--) 
+		          System.out.print(" ");
+		      for (int j = 1; j <= i; j++) 
+		          System.out.print("* ");
+		      System.out.println();
+		 }
+0:
+* * * * * * 
+ * * * * * 
+  * * * * 
+   * * * 
+    * * 
+     * 
+     * 
+    * * 
+   * * * 
+  * * * * 
+ * * * * * 
+* * * * * * 
+-----------------------------------------------------------------
+ int star=5;                                       //Half Diamond Pattern:
+		for (int i = 1; i <=star ; i++)            
+		{ 
+			
+		      for (int j = 1; j <=i; j++) 
+		          System.out.print("* ");
+		      System.out.println();
+		 }
+		for (int i = star-1; i >=1 ; i--)            
+		{ 
+			
+		      for (int j = 1; j <=i; j++) 
+		          System.out.print("* ");
+		      System.out.println();
+		 }
+		
+0:
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+---------------------------------------------------------------------------
+int star=6;                                 //Reverse Half Diamond Pattern:
+		for (int i = 1; i <=star ; i++)                  
+		{
+			for (int l = star-1; l >= i; l--) 
+		          System.out.print("  ");
+		      for (int j = 1; j <= i; j++) 
+		          System.out.print("* ");
+		      System.out.println();
+		 }
+		for (int i = star-1; i >=1 ; i--)               
+		{ 
+			for (int l = star-1; l >= i; l--) 
+		          System.out.print("  ");
+		      for (int j = i; j >= 1; j--) 
+		          System.out.print("* ");
+		      System.out.println();
+		 }
+0:
+        * 
+      * * 
+    * * * 
+  * * * * 
+* * * * * 
+  * * * * 
+    * * * 
+      * * 
+        * 
+------------------------------------------------------------------------------
+int star=7;
+for (int i = 1; i <=star; i++) 
+		{
+		      for (int j = 1; j <=star; j++) 
+		      {  
+		    	  if(i==1 && j==2 || i==2 && j==7 || i==3 && j==3 ||i==5 && j==5 ||i==7 && j==7)
+		    	      System.out.print("$ "); 
+		    	  else
+		               System.out.print("* ");
+		      }
+		      System.out.println();	   
+		 }
+0:
+* $ * * * * * 
+* * * * * * $ 
+* * $ * * * * 
+* * * * * * * 
+* * * * $ * * 
+* * * * * * * 
+* * * * * * $ 
+----------------------------------------------------------------------------------------
+for (int i = 1; i <=4 ; i++)                   
+		{
+			for (int j = 1; j <= 5; j++)
+			{
+				if(j==1 || i==j || j==2 &&( i==3 || i==4) || i==4 && j==3)
+		          System.out.print("  ");
+				else
+			         System.out.print("* ");
+			}
+		     
+		      System.out.println();
+		 }
+0:
+  * * * * 
+    * * * 
+      * * 
+        * 
+---------------------------------------------------------------------------
+int star=5;                 
+		for (int i = star; i >=1 ; i--)            
+		{ 
+		      for (int j = 1; j <=i; j++) 
+		          System.out.print("* ");
+		      System.out.println();
+		 }
+		for (int i = 1; i <=star ; i++)            
+		{ 
+			
+		      for (int j = 1; j <=i; j++) 
+		          System.out.print("* ");
+		      System.out.println();
+		 }
+0:
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+---------------------------------------------------------------------
+		int star=5;              
+		for (int i = star; i >=1 ; i--)            
+		{ 
+			for (int l = star-1; l >= i; l--) 
+		          System.out.print("  ");
+		      for (int j = i; j >= 1; j--) 
+		          System.out.print("* ");
+		      System.out.println();
+		 }
+		for (int i = 1; i <=star ; i++)            
+		{ 
+			for (int l = star-1; l >= i; l--) 
+		          System.out.print("  ");
+		      for (int j = 1; j <=i; j++) 
+		          System.out.print("* ");
+		      System.out.println();
+		 }
+0:
+* * * * * 
+  * * * * 
+    * * * 
+      * * 
+        * 
+        * 
+      * * 
+    * * * 
+  * * * * 
+* * * * * 
+--------------------------------------------------------------------
+int star=10;
+		for (int i = 1; i <= star; ++i)      //Hollow square Pattern
+		{
+		      for (int j = 1; j <= star; j++) 
+		      {
+		    	  if(i==1 || j==1 || i==star || j==star )
+		             System.out.print("* ");
+		    	  else
+		    		  System.out.print("  ");
+		      }
+		      System.out.println();
+		 }
+0: 
+* * * * * 
+*       * 
+*       * 
+*       * 
+* * * * * 
+---------------------------------------------------------------------------------- 
+int star=10;
+		for (int i = 1; i <= star; ++i)      //Hollow Right Triangle Pattern
+		{
+		      for (int j = 1; j <= i; ++j) 
+		      {
+		    	  if(j==1 || i==j || i==star )
+		             System.out.print("* ");
+		    	  else
+		    		  System.out.print("  ");
+		      }
+		      System.out.println();
+		 }
+
+0:
+* 
+* * 
+*   * 
+*     * 
+* * * * * 
+------------------------------------------------------------------
+int star=10,copy=star;
+		for (int i = 1; i <= star; ++i)      //Hollow square daigonal left Pattern
+		{
+		      for (int j = 1; j <= star; j++) 
+		      {
+		    	  if(i==1 || j==1 || i==star || j==star || i==j)
+		             System.out.print("* ");
+		    	  else
+		    		  System.out.print("  ");
+		      }
+		      System.out.println();
+		 }
+0:
+* * * * * * * 
+* *         * 
+*   *       * 
+*     *     * 
+*       *   * 
+*         * * 
+* * * * * * * 
+---------------------------------------------------------------------------------
+int star=9;
+		for (int i = 1; i <= star; ++i)      //Hollow square daigonal left & right Pattern
+		{
+		      for (int j = 1; j <= star; j++) 
+		      {
+		    	  if(i==1 || j==1 || i==star || j==star || j==star-i+1 || i==j)
+		             System.out.print("* ");
+		    	  else
+		    		  System.out.print("  ");
+		      }
+		      System.out.println();
+		 }
+0:
+* * * * * * * 
+* *       * * 
+*   *   *   * 
+*     *     * 
+*   *   *   * 
+* *       * * 
+* * * * * * * 
+
+-----------------------------------------------------------------------------
+int star=10;                                          // hallow Daimond pattern   
+		for (int i = 1; i <=star ; i++)      
+		{
+			for (int l = star-1; l >= i; l--) 
+		          System.out.print(" ");
+		      for (int j = 1; j <= i; j++) 
+		      {
+		    	  if(j==1 || i==j )
+			             System.out.print("* ");
+			    	  else
+			    		  System.out.print("  ");
+		      }
+		      System.out.println();      
+		 }
+		for (int i = star-1; i >=1 ; i--)             
+		{ 
+			for (int l = star-1; l >= i; l--) 
+		          System.out.print(" ");
+		      for (int j = i; j >= 1; j--)
+		      {
+		    	  if(j==1 || i==j )
+			             System.out.print("* ");
+			    	  else
+			    		  System.out.print("  ");
+		      }
+		      System.out.println();
+		 }
+0:
+   * 
+  * * 
+ *   * 
+*     * 
+ *   * 
+  * * 
+   * 
+---------------------------------------------------------------------------
+		int star=6;
+		for (int i = 1; i <=star ; i++)      //haloow Pyramid Pattern
+		{
+			for (int l = star-1; l >= i; l--) 
+		          System.out.print(" ");
+		      for (int j = 1; j <= i; j++)
+		      {
+		    	  if(j==1 || i==j || i==star )
+		             System.out.print("* ");
+		    	  else
+		    		  System.out.print("  ");
+		      }
+
+		      System.out.println();
+		 }
+0:
+     * 
+    * * 
+   *   * 
+  *     * 
+ *       * 
+* * * * * * 
+-------------------------------------------------------------------------
+		int star=5;                // hallow Inverted Pyramid Pattern:
+		for (int i = star; i >=1 ; i--) 
+		{ 
+			for (int l = star-1; l >= i; l--) 
+		          System.out.print(" ");
+		      for (int j = i; j >= 1; j--)
+		      {
+		    	  if(j==1 || i==j || i==star )
+		             System.out.print("* ");
+		    	  else
+		    		  System.out.print("  ");
+		      }
+		      System.out.println();
+		 }
+0:
+* * * * * 
+ *     * 
+  *   * 
+   * * 
+    * 
+--------------------------------------------------------------------
+		int star=5;        //ulta palta hollow daimond       
+		for (int i = star; i >=1 ; i--) 
+		{ 
+			for (int l = star-1; l >= i; l--) 
+		          System.out.print(" ");
+		      for (int j = i; j >= 1; j--)
+		      {
+		    	  if(j==1 || i==j || i==star )
+		             System.out.print("* ");
+		    	  else
+		    		  System.out.print("  ");
+		      }
+		      System.out.println();
+		 }
+		for (int i = 1; i <=star ; i++)   
+		{
+			for (int l = star-1; l >= i; l--) 
+		          System.out.print(" ");
+		      for (int j = 1; j <= i; j++)
+		      {
+		    	  if(j==1 || i==j || i==star )
+		             System.out.print("* ");
+		    	  else
+		    		  System.out.print("  ");
+		      }
+
+		      System.out.println();
+		 }
+0:
+* * * * * 
+ *     * 
+  *   * 
+   * * 
+    * 
+    * 
+   * * 
+  *   * 
+ *     * 
+* * * * * 
+------------------------------------------------------------------------
+int star=5;                              //hollow Half Diamond Pattern:
+			for (int i = 1; i <=star ; i++)            
+			{ 
+				
+			      for (int j = 1; j <=i; j++) 
+			      {
+			    	  if(j==1 || i==j  )
+			             System.out.print("* ");
+			    	  else
+			    		  System.out.print("  ");
+			      }
+			      System.out.println();
+			 }
+			for (int i = star-1; i >=1 ; i--)            
+			{ 
+				
+			      for (int j = 1; j <=i; j++) 
+			      {
+			    	  if(j==1 || i==j || i==star )
+			             System.out.print("* ");
+			    	  else
+			    		  System.out.print("  ");
+			      }
+			      System.out.println();
+			 }
+0:
+* 
+* * 
+*   * 
+*     * 
+*       * 
+*     * 
+*   * 
+* * 
+* 
+------------------------------------------------------------
+int star=5;    
+		for (int i = 1; i <=star ; i++)            
+		{ 
+			
+		      for (int j = 1; j <=i; j++) 
+		          System.out.print("* ");
+		      for (int l = star-1; l >= i; l--) 
+		          System.out.print("    ");  //4 spaces
+		      for (int j = 1; j <= i; j++) 
+		          System.out.print(" *");
+		      System.out.println();
+		 }
+
+0:
+*                  *
+* *              * *
+* * *          * * *
+* * * *      * * * *
+* * * * *  * * * * *
+---------------------------------------------------------------------------
+=======================================
+SPACES LOOPS
+---
+for(int l = 1; l <=2*(star-i);l++) 
+    System.out.print("  ");  //2 spaces
+---
+for(int l = 2*(star-i); l >=1;l--) 
+     System.out.print("  ");  //2 spaces
+---
+for (int l = star-1; l >= i; l--) 
+      System.out.print("    ");  //4 spaces
+---
+=======================================
+---------------------------------------------------------------------------
+int star=5;    
+		for (int i = star; i >=1 ; i--)            
+		{ 
+			for (int j = i; j >= 1; j--) 
+		          System.out.print("* ");
+			for (int l = star-1; l >= i; l--) 
+		          System.out.print("    ");  //4 spaces
+		    for (int j = i; j >= 1; j--) 
+		          System.out.print(" *");
+		      System.out.println();
+		 }
+
+0:
+* * * * *  * * * * *
+* * * *      * * * *
+* * *          * * *
+* *              * *
+*                  *
+--------------------------------------------------------------------------------
+int star=5;    
+		for (int i = 1; i <=star ; i++)            
+		{ 
+			
+		      for (int j = 1; j <=i; j++) 
+		          System.out.print("* ");
+		  	for (int l = star-1; l >= i; l--) 
+		          System.out.print("    ");  //4 spaces
+		      for (int j = 1; j <= i; j++) 
+		          System.out.print(" *");
+		      System.out.println();
+		 }
+		for (int i = star-1; i >=1 ; i--)            
+		{ 
+			for (int j = i; j >= 1; j--) 
+		          System.out.print("* ");
+			for (int l = star-1; l >= i; l--) 
+		          System.out.print("    ");  //4 spaces
+		    for (int j = i; j >= 1; j--) 
+		          System.out.print(" *");
+		      System.out.println();
+		 }
+0:
+*                  *
+* *              * *
+* * *          * * *
+* * * *      * * * *
+* * * * *  * * * * *
+* * * *      * * * *
+* * *          * * *
+* *              * *
+*                  *
+----------------------------------------------------------------------------------------------------------
+int star=5; 
+		for (int i = 1; i <=star ; i++)        //RIGHT PASCAL's Triangle     
+		{ 
+		  for (int j = 1; j <= i; j++)
+		  {
+			  if((i % 2 == 0 && j % 2 != 0) || (i % 2 != 0 && j % 2 == 0))         //if((i+j)%2==0)
+				  System.out.print("  ");
+			  else
+				  System.out.print("* ");
+		   }
+		  System.out.println();
+	    }	
+
+		for (int i = star-1; i >=1 ; i--)            
+		{ 
+		  for (int j = 1; j <= i; j++)
+		  {
+			  if((i % 2 == 0 && j % 2 != 0) || (i % 2 != 0 && j % 2 == 0))           //if((i+j)%2==0)
+				  System.out.print("  ");
+			  else
+				  System.out.print("* ");
+		   }
+		  System.out.println();
+	    }	
+0:
+* 
+  * 
+*   * 
+  *   * 
+*   *   * 
+  *   * 
+*   * 
+  * 
+* 
+================================================================================================================================================== 
+NUMBER PATTERNS
+==================================================================================================================================================
+   
+int star=7;
+		for (int i = 0; i<star ; i++)      
+		{
+		      for (int j = 0; j <=i; j++) 
+		          System.out.print(star-j);
+		      System.out.println();
+		 }
+0:
+7
+76
+765
+7654
+76543
+765432
+7654321
+---------------------------------------------------------
+int num=6;                                  //number right angle pattern 
+		for(int i=1;i<=num;i++)
+		{
+			for(int j=1;j<=i;j++)
+			    System.out.print(j+" ");
+			System.out.println();
+		}
+
+0:
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
+1 2 3 4 5 6 
+-------------------------------------------------------------------------------------------------------
+int num=6;                                     // num right angle reverse  
+		for(int i=1;i<=num;i++)
+		{
+			for(int l=num-1;l>=i;l--)
+			    System.out.print("  ");
+			for(int j=i;j>0;j--)
+			    System.out.print(" "+j);
+			System.out.println();
+		}
+0:
+           1
+         2 1
+       3 2 1
+     4 3 2 1
+   5 4 3 2 1
+ 6 5 4 3 2 1
+-----------------------------------------------------------------------------------------
+int star=5;
+		for (int i = 1; i<=star ; i++)      //palindrome triangular
+		{
+		      for (int j = 1; j <=i; j++) 
+		          System.out.print(j+" ");
+		      for (int j = i; j >=2; j--) 
+		          System.out.print(j-1+" ");
+		      System.out.println();
+		 }
+0:
+1 
+1 2 1 
+1 2 3 2 1 
+1 2 3 4 3 2 1 
+1 2 3 4 5 4 3 2 1 
+---------------------------------------------------------------------------------------
+int star=5;
+		for (int i = 1; i<=star ; i++)      //palindrome triangular
+		{
+			for (int l = star-1; l >= i; l--) 
+				System.out.print("  ");
+		      for (int j = i; j >=1; j--) 
+		          System.out.print(j+" ");
+		      for (int j = 2; j <=i; j++) 
+		          System.out.print(j+" ");
+		      System.out.println();
+		 }
+0:
+        1 
+      2 1 2 
+    3 2 1 2 3 
+  4 3 2 1 2 3 4 
+5 4 3 2 1 2 3 4 5 
+---------------------------------------------------------------------------------------
+int star=4;
+		for (int i = 1; i <=star ; i++)      //Pyramid Pattern
+		{
+			for (int l = star-1; l >= i; l--) 
+		          System.out.print(" ");  //1 space
+		      for (int j = 1; j <= i; j++) 
+		          System.out.print(i+" ");
+		      System.out.println();
+		 }
+0:
+   1 
+  2 2 
+ 3 3 3 
+4 4 4 4 
+--------------------------------------------------------------------------------------------------------
+int star=4,sum=0;
+		for (int i = 1; i <=star ; i++)      //Number changing Pyramid 
+		{
+			  //1 space
+		      for (int j = 1; j <= i; j++)
+		      {
+		    	  sum=sum+1;                                  //sum++;
+		          System.out.print(sum+" ");
+		      }
+		      System.out.println();
+		 }
+0:
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+--------------------------------------------------------------------------------------------------
+int star=5,num;
+		for (int i = 0; i <star ; i++)      //pascal's triangle 
+		{
+			  num=1;
+		      for (int j = 0; j <=i; j++)
+		      {
+		    	  System.out.print(num+" ");
+	                num = num * (i - j) / (j + 1);
+		      }
+		      System.out.println();
+		 }
+0:
+1 
+1 1 
+1 2 1 
+1 3 3 1 
+1 4 6 4 1 
+-----------------------------------------------------------------------------
+int star=5;     	 
+			for (int i = star; i >=1 ; i--)            
+			{ 
+			  for (int j = star-i; j >= 1; j--)
+				  System.out.print(" ");//1 space
+			  for (int j = i; j >= 1; j--)
+				  System.out.print(i+" ");
+			  System.out.println();
+		 }
+0:
+5 5 5 5 5 
+ 4 4 4 4 
+  3 3 3 
+   2 2 
+    1 
+---------------------------------------------------------------------------------------------------
+int star=5;     	 
+			for (int i = 1; i <=star ; i++)            
+			{ 
+			  for (int j = 1; j <= i; j++)
+			  {
+				  if((i % 2 == 0 && j % 2 != 0) || (i % 2 != 0 && j % 2 == 0))  //if((i+j)%2==0)
+					  System.out.print(0+" ");
+				  else
+					  System.out.print(1+" ");
+			   }
+			  System.out.println();
+		 }
+0:
+1 
+0 1 
+1 0 1 
+0 1 0 1 
+1 0 1 0 1 
+
+//int value = (i % 2 == 0 && j % 2 != 0) || (i % 2 != 0 && j % 2 == 0) ? 0 : 1;
+//System.out.print(value + " ");
+----------------------------------------------------------------------------------------------------------------------
+int star=4;                         
+		for (int i = star; i>=1; i--)                         //MIRROR IMAGE TRIANGLE PATTERN
+		{ 
+		  for (int j = star-i; j >= 1; j--)
+				System.out.print(" ");//1 space
+		  for (int j =i-1; j >=0;j--)
+			  System.out.print(star-j+" ");
+		  System.out.println();
+	    }
+		for (int i = 1; i< star; i++)            
+		{ 
+		  for (int j = star-i; j >= 2; j--)
+				System.out.print(" ");//1 space
+		  for (int j =i ; j >=0;j--)
+			  System.out.print(star-j+" ");
+		  System.out.println();
+	    }
+0:
+1 2 3 4 
+ 2 3 4 
+  3 4 
+   4 
+  3 4 
+ 2 3 4 
+1 2 3 4 
+----------------------------------------------------------------------------------------------------------
+int star=4;
+		for (int i = star; i>=1; i--)            
+		{ 
+		  for (int j = star-i; j >= 1; j--)
+				System.out.print(" ");//1 space
+		  for (int j =i-1; j >=0;j--)
+			  System.out.print(star-j+" ");
+		  System.out.println();
+	    }
+0:
+1 2 3 4 
+ 2 3 4 
+  3 4 
+   4 
+------------------------------------------------------------------------------------------
+int star=4;
+		for (int i = 0; i< star; i++)            
+		{ 
+		  for (int j = star-i; j >= 2; j--)
+				System.out.print(" ");//1 space
+		  for (int j =i ; j >=0;j--)
+			  System.out.print(star-j+" ");
+		  System.out.println();
+	    }
+0:
+   4 
+  3 4 
+ 2 3 4 
+1 2 3 4 
+-------------------------------------------------------------------------------------------------------------
+		Scanner s= new Scanner(System.in);
+		System.out.println("Enter the Number:");
+		int star=s.nextInt();      
+		for (int i = 1; i <=star ; i++)            
+		{ 	
+			 for (int j =i ; j>=1; j--) 
+			      System.out.print(j+" ");
+			 System.out.println();
+		}
+0:
+Enter the Number:
+5
+1 
+2 1 
+3 2 1 
+4 3 2 1 
+5 4 3 2 1 
+-------------------------------------------------------------------------------------------------------------
+
+================================================================================================================================================== 
+CHARACTER PATTERNS
+==================================================================================================================================================
+
+   int num=5;                                      //Alphabet right angle pattern 
+		char c='A';
+		for(int i=0;i<num;i++)
+		{
+			for(int j=0;j<=i;j++)
+			    System.out.print((char)(c+j)+" ");
+			System.out.println();
+		}
+0:
+A 
+A B 
+A B C 
+A B C D 
+A B C D E 
+-------------------------------------------------------------------------------------------
+int num=5;                                    //Alphabet right angle  reverse pattern 
+		char c='A';
+		for(int i=0;i<num;i++)
+		{
+			for(int l=num-1;l>i;l--)
+			    System.out.print("  ");
+			for(int j=i;j>=0;j--)
+			    System.out.print(" "+(char)(c+j));
+			System.out.println();
+		}
+0:
+         A
+       B A
+     C B A
+   D C B A
+ E D C B A
+----------------------------------------------------------------------------------------------------------------------
+===========================================================================================================================
+PRACT
+===========================================================================================================================
+
+int star=5;      
+			for (int i = star; i >=1 ; i--)            
+			{ 	
+			      for (int j = 1; j <=i; j++) 
+			      {
+			    	  if(i%2==0)
+			              System.out.print("* ");
+			    	  else
+			    		  System.out.print("@ ");
+			      }
+			      System.out.println();
+			 }
+0:
+@ @ @ @ @ 
+* * * * 
+@ @ @ 
+* * 
+@ 
+----------------------------------------------------------------------------
+int star=6;      
+			for (int i = star; i >=1 ; i--)            
+			{ 	
+			      for (int j = 1; j <=i; j++) 
+			      {
+			    	  if((i+j)%2==0)   //if(i%2!=0 && j%2!=0 || j%2==0 && i%2==0)
+
+			              System.out.print("* ");
+			    	  else
+			    		  System.out.print("@ ");
+			      }
+			      System.out.println();
+			 }
+0:
+@ * @ * @ * 
+* @ * @ * 
+@ * @ * 
+* @ * 
+@ * 
+* 
+---------------------------------------------------------------------------------------------
+Scanner s= new Scanner(System.in);
+		System.out.println("Enter the Pattern Number:");
+		int star=s.nextInt();      
+		for (int i = 1; i <=star ; i++)            
+		{ 	
+			 for (int j =1 ; j<=i; j++) 
+			      System.out.print(j+" ");
+			 System.out.println();
+		}
+		for (int i = star; i >=1 ; i--)            
+		{ 	
+			 for (int j =1 ; j<=i; j++) 
+			      System.out.print(j+" ");
+			 System.out.println();
+		}
+0:
+Enter the Pattern Number:
+4
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 
+1 2 3 
+1 2 
+1 
+--------------------------------------------------------------------------------------------------------
+Scanner s= new Scanner(System.in);
+		System.out.println("Enter the Pattern Number:");
+		int r=s.nextInt();      
+		for (int i = r; i >=1 ; i--)            
+		{ 	
+			 for (int j =0; j<i; j++) 
+			      System.out.print(r-j+" ");
+			 System.out.println();
+		}
+0:
+Enter the Pattern Number:
+4
+4 3 2 1 
+4 3 2 
+4 3 
+4 
+
+for (int i = 1; i <=r ; i++)            
+		{ 	
+			 for (int j =r; j>=i; j--) 
+			      System.out.print(j+" ");
+			 System.out.println();
+		}
+--------------------------------------------------------------------------------------------------------------
+ public static void main(String[] args)
+   {
+	 int r=4;
+	 System.out.println("=====1=====");
+	 for(int i=1;i<=r;i++)
+	 {
+		 for(int j=1;j<=i;j++)
+			 System.out.print(j+" ");
+		 System.out.println();
+	 }
+	 System.out.println("=====2=====");
+	 for(int i=1;i<=r;i++)
+	 {
+		 for(int j=r-1;j>=i;j--)
+			 System.out.print("  ");
+		 for(int j=i;j>=1;j--)
+			 System.out.print(j+" ");
+		 System.out.println();
+	 }
+	 System.out.println("=====3=====");
+	 for (int i = 1; i <=r ; i++)            
+		{ 	
+			 for (int j =r; j>=i; j--) 
+			      System.out.print(j+" ");
+			 System.out.println();
+		}
+         System.out.println("======4====");
+	 for(int i=1;i<=r;i++)
+	 {
+		 for(int j=i-1;j>=1;j--)
+			 System.out.print("  ");
+		 for(int j=i;j<=r;j++)
+			 System.out.print(j+" ");
+		 System.out.println();
+	 }
+	 System.out.println("=====5=====");
+	 for(int i=r;i>=1;i--)
+	 {
+		 for(int j=1;j<=i;j++)
+			 System.out.print(j+" ");
+		 System.out.println();
+	 }
+	 System.out.println("=====6=====");
+	 for(int i=r;i>=1;i--)
+	 {
+		 for(int j=r-1;j>=i;j--)
+			 System.out.print("  ");
+		 for(int j=i;j>=1;j--)
+			 System.out.print(j+" ");
+		 System.out.println();
+	 }
+         System.out.println("======7====");
+	 for(int i=r;i>=1;i--)
+	 {
+		 for(int j=r;j>=i;j--)
+			 System.out.print(j+" ");
+		 System.out.println();
+	 }
+	 System.out.println("======8====");
+	 for(int i=r;i>=1;i--)
+	 {
+		 for(int j=2;j<=i;j++)
+			 System.out.print("  ");
+		 for(int j=i;j<=r;j++)
+			 System.out.print(j+" ");
+		 System.out.println();
+	 }
+    }
+0:
+=====1=====
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+=====2=====
+      1 
+    2 1 
+  3 2 1 
+4 3 2 1 
+=====3=====
+4 3 2 1 
+4 3 2 
+4 3 
+4 
+======4====
+1 2 3 4 
+  2 3 4 
+    3 4 
+      4 
+=====5=====
+1 2 3 4 
+1 2 3 
+1 2 
+1 
+=====6=====
+4 3 2 1 
+  3 2 1 
+    2 1 
+      1 
+======7====
+4 
+4 3 
+4 3 2 
+4 3 2 1 
+======8====
+      4 
+    3 4 
+  2 3 4 
+1 2 3 4 
+
+======8====
+for (int i = star; i >=1 ; i--)            
+		{ 
+		      for (int j = 1; j <=star; j++) 
+		      {
+		    	  if(j<i)
+			          System.out.print("  ");
+		    	  else
+			          System.out.print(j+" ");
+		      }
+		      System.out.println();
+		 }
+======4====
+for (int i = 1; i <=star ; i++)            
+		{ 
+		      for (int j = 1; j <=star; j++) 
+		      {
+		    	  if(j<i)
+			          System.out.print("  ");
+		    	  else
+			          System.out.print(j+" ");
+		      }
+		      System.out.println();
+		 }
+
+======6====
+for (int i = star; i >=1 ; i--)            
+		{ 
+		      for (int j = star; j >=1; j--) 
+		      {
+		    	  if(j>i)
+			          System.out.print("  ");
+		    	  else
+			          System.out.print(j+" ");
+		      }
+		      System.out.println();
+		 }
+
+======2====
+
+for (int i = 1; i <=star ; i++)            
+		{ 
+		      for (int j = star; j >=1; j--) 
+		      {
+		    	  if(j>i)
+			          System.out.print("  ");
+		    	  else
+			          System.out.print(j+" ");
+		      }
+		      System.out.println();
+		 }
+--------------------------------------------------------------------------------------
+
+
+
